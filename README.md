@@ -81,8 +81,8 @@ Faire en sorte que les boutons multiplicateur, autoclic et bonus ne soient clica
 ### Étape 15 : _du CSS_
 Que ce soit beau ! Pas d'images !
 
-
-## Lundi
+## Calendrier
+### Lundi
 - visualisation de la video SRCUM
 - creation d'un Rebo GitHub
 -- Master
