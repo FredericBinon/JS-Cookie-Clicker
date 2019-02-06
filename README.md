@@ -34,8 +34,9 @@ djedou
 ## Objectives
 
 ## Insctruction:
-### Étape 1 : _structure de base_
-Faire une structure de base *HTML* / *CSS* / *JS*. Dans le HTML, mettre un bouton avec un identifiant « clic » et une `div` avec un identifiant `affichage`, dont la valeur initiale sera `0`.
+
+``` ### Étape 1 : _structure de base_
+Faire une structure de base *HTML* / *CSS* / *JS*. Dans le HTML, mettre un bouton avec un identifiant « clic » et une `div` avec un identifiant `affichage`, dont la valeur initiale sera `0`. 
 
 ### Étape 2 : _préparer le JS_
 Préparez les variables en tête du *JS* qui nous permettront de manipuler notre bouton et notre `div`. Nous aurons également besoin d'une variable `score` que nous initialiserons à `0`.
@@ -79,7 +80,8 @@ Vous créerez le bouton « BONUS » avec l'id `bonus`, et le bonus coutera `5000
 Faire en sorte que les boutons multiplicateur, autoclic et bonus ne soient clicables QUE si j'ai le score nécessaire pour les acheter.
 
 ### Étape 15 : _du CSS_
-Que ce soit beau ! Pas d'images !
+Que ce soit beau ! Pas d'images ! 
+``` 
 
 ## Calendrier
 ### Lundi
