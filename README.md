@@ -81,3 +81,14 @@ Faire en sorte que les boutons multiplicateur, autoclic et bonus ne soient clica
 ### Étape 15 : _du CSS_
 Que ce soit beau ! Pas d'images !
 
+
+## Lundi
+- visualisation de la video SRCUM
+- creation d'un Rebo GitHub
+--Master
+--Development 
+---design
+---JS Clic/Score
+- préparation du calandrier
+- Amalia et Arnaud débute le code en JS pour lier le "clic" au "Score"
+- Frederique et Andres créent le design de base HTML et CSS visualisation des boutons. 
