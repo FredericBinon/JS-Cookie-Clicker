@@ -86,7 +86,7 @@ Que ce soit beau ! Pas d'images !
 ## Calendrier
 ### Lundi
 - visualisation de la video SRCUM
-- creation d'un Rebo GitHub
+- creation d'un Repos GitHub
 * Master
 * Development 
  ** design
