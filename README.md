@@ -93,4 +93,4 @@ Que ce soit beau ! Pas d'images !
  ** JS Clic/Score
 - préparation du calandrier
 - Amalia et Arnaud débute le code en JS pour lier le "clic" au "Score"
-- Frederique et Andres créent le design de base HTML et CSS visualisation des boutons. 
+- Frederic et Andres créent le design de base HTML et CSS visualisation des boutons. 
