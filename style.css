@@ -1,0 +1,70 @@
+body{
+  margin: 0px;
+}
+
+main{
+  width:90%;
+  height:75vh;
+  display:flex;
+  margin:5%;
+  background-color: blue;
+}
+
+.left{
+  width:50%;
+  background-color: red;
+  margin-right: 5%;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.actions{
+    height: 25%;
+  margin: 5vh;
+  background-color: orange;
+  display:flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.prix{
+  background-color: cyan;
+  margin: 10%;
+}
+.compteur{
+  background-color: white;
+  margin: 10%;
+}
+
+
+.prixMulti, .nombreMulti, .prixAutoclicker, .nombreAutoclicker, .prixBonus, .tempsRestant{
+  width:50%;
+  padding-top: 5%;
+}
+
+.right{
+  text-align: center;
+  margin-left: 5%;
+  width: 50%;
+  background-color: yellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.affichage{
+  background-color: grey;
+  margin-bottom: 5vh;
+  height:10vh;
+}
+
+.clic {
+  background-color: green;
+  height:200px;
+  width:200px;
+}
+
+button{
+  width:100%;
+  margin: 1vw;
+}
