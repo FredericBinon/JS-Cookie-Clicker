@@ -1,0 +1,13 @@
+body {
+    background-color: grey;
+}
+
+.container {
+    border: solid black;
+    margin: auto;
+    width: 50%;
+    height: 780px;
+    
+}
+
+
