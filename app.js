@@ -1,3 +1,6 @@
+
+
+
 window.onload = () => {
     let multiObjet = {
         prix: 50,
@@ -10,11 +13,7 @@ window.onload = () => {
             
             return ++this.nombre;
         }
-    }    
-
-
-
-
+    } 
     let score = 0;
     let multiplicateur = 1;
 
