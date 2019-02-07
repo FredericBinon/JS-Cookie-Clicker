@@ -94,3 +94,11 @@ Que ce soit beau ! Pas d'images !
 - préparation du calandrier
 - Amalia et Arnaud débute le code en JS pour lier le "clic" au "Score"
 - Frederic et Andres créent le design de base HTML et CSS visualisation des boutons. 
+
+### Mardi
+- mise en place du programme de la journée
+- organisation des branches sur Git Hub.
+- Amalia et Arnaud: fonction du boutton Multiplicateur, de son prix et de son nombre sur .JS
+- Mathilde et Andres: application du design en .html et .css
+- Frerderic: previsualisation du code sur papier en francais du futur code. (UML)
+
