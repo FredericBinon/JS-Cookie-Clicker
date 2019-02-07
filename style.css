@@ -7,15 +7,56 @@ main{
   height:75vh;
   display:flex;
   margin:5%;
-  background-color: blue;
+  background-color:#000;
+  border-style: groove;
+  border-width: 2em;
+  border-color:#fcb045;
+  border-radius: 0%;
+}
+
+.center {
+  width: 20%;
+  background-color: #fcb045;
+  -webkit-box-shadow: 0px 0px 181px -25px rgba(235,38,71,1);
+-moz-box-shadow: 0px 0px 181px -25px rgba(235,38,71,1);
+box-shadow: 0px 0px 181px -25px rgba(235,38,71,1);
+}
+.center h1{
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  margin-left: 40%;
+  margin-top: 15%;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 2em;
+  color: #fd1d1d;
+}
+.center img {
+  margin-left: 10px;
+  width: 150%;
+  align-items: center;
 }
 
 .left{
   width:50%;
-  background-color: red;
   margin-right: 5%;
   flex-direction: column;
   justify-content: space-around;
+  background: 
+  linear-gradient(135deg, black 25%, transparent 25%) -50px 0,
+  linear-gradient(225deg, black 25%, transparent 25%) -50px 0,
+  linear-gradient(315deg, black 25%, transparent 25%),
+  linear-gradient(45deg, black 25%, transparent 25%);	
+  background-size: 2em 2em;
+  background-color: #232323;
+}
+.left span {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 2em;
+  color: #353030;
+}
+
+.left p {
+  font-family: 'Press Start 2P', cursive;
 }
 
 .actions{
@@ -28,28 +69,36 @@ main{
 }
 
 .prix{
-  background-color: cyan;
+  background-color:#fac780;
   margin: 10%;
+  padding: 10px;
+  color: #353030;
 }
 .compteur{
-  background-color: white;
+  background-color:#dad7a6 ;
   margin: 10%;
+  padding: 10px;
+  color:#353030;
 }
 
 
 .prixMulti, .nombreMulti, .prixAutoclicker, .nombreAutoclicker, .prixBonus, .tempsRestant{
   width:50%;
   padding-top: 5%;
+  
 }
 
 .right{
   text-align: center;
   margin-left: 5%;
   width: 50%;
-  background: #833ab4;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to bottom, #fcb045, #fd1d1d, #833ab4);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to bottom, #fcb045, #fd1d1d, #833ab4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+  background: 
+  linear-gradient(135deg, black 25%, transparent 25%) -50px 0,
+  linear-gradient(225deg, black 25%, transparent 25%) -50px 0,
+  linear-gradient(315deg, black 25%, transparent 25%),
+  linear-gradient(45deg, black 25%, transparent 25%);	
+  background-size: 2em 2em;
+  background-color: #232323;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -64,11 +113,11 @@ main{
   
 
 .affichage{
-  margin-bottom: 8vh;
+  margin-bottom: 15vh;
   height:10vh;
-  font-size: 4em;
+  font-size: 5em;
   color: aquamarine;
-  font-family: 'Pacifico', cursive;
+  font-family: 'Press Start 2P', cursive;
 }
 
 .clic {
@@ -82,6 +131,23 @@ main{
   font-family: 'Pacifico', cursive;
   font-size: 2em;
   color:yellowgreen;
+  transition: all 3s;
+  
+  
+}
+.clic:hover {
+  margin-top: 5%;
+  height:200px;
+  width:30%px;
+  background-image: url("images/cookie.svg");
+  background-repeat: no-repeat;
+  background-size: 400px;
+  background-position: 50% 0%;
+  font-family: 'Pacifico', cursive;
+  font-size: 2em;
+  color:yellowgreen;
+  transform: rotate(2080deg);
+  
 }
 
 button{
