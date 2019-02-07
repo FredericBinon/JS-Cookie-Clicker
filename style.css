@@ -46,22 +46,42 @@ main{
   text-align: center;
   margin-left: 5%;
   width: 50%;
-  background-color: yellow;
+  background: #833ab4;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #fcb045, #fd1d1d, #833ab4);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #fcb045, #fd1d1d, #833ab4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+.right h2{
+  font-size: 2em;
+  margin-bottom: 1em;
+  font-family: 'Pacifico', cursive;
+  color:white;
+  }
+  
+
 .affichage{
-  background-color: grey;
-  margin-bottom: 5vh;
+  margin-bottom: 8vh;
   height:10vh;
+  font-size: 4em;
+  color: aquamarine;
+  font-family: 'Pacifico', cursive;
 }
 
 .clic {
-  background-color: green;
+  margin-top: 5%;
   height:200px;
-  width:200px;
+  width:30%px;
+  background-image: url("images/cookie.svg");
+  background-repeat: no-repeat;
+  background-size: 400px;
+  background-position: 50% 0%;
+  font-family: 'Pacifico', cursive;
+  font-size: 2em;
+  color:yellowgreen;
 }
 
 button{
