@@ -76,5 +76,4 @@ window.onload = () => {
             prixaffichage.innerText = multiObjet.prix;
             compteur.innerText = multiplicateur - 2;
         }
-    })   
 }
