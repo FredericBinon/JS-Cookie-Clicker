@@ -1,6 +1,6 @@
 window.onload = () => {
 
-    let autobutton = document.getElementsByName("autoclicker");
+    let autobutton = document.getElementsByName("autoclicker")[0];
     let affichage = document.getElementById("affichage");
     let clicseconde=0;
     let boutonactive=false;
@@ -17,15 +17,13 @@ window.onload = () => {
             }
             if (score<500){
                 /*erreur: Wesh ma gueule, il te faut plus de cookies pour ça*/
-            } 
+            }
         }
         else {
                 /*erreur: Bin non gros malin, tu l'as deja activé*/
         }
-        
-    })   
 
-
+    })
 
 
 }
