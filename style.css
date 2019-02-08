@@ -16,7 +16,20 @@ main{
 }
 
 
+button {
+  background: #1D2B64;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #F8CDDA, #1D2B64);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #F8CDDA, #1D2B64); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
+}
+
+button:hover {
+  background: #1D2B64;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #F8CDDA, #1D2B64);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #F8CDDA, #1D2B64); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+
+}
 
 
 .center {
@@ -44,7 +57,7 @@ box-shadow: 0px 0px 181px 5px rgb(80, 77, 243);
     -moz-animation: color-change 1s infinite;
     -o-animation: color-change 1s infinite;
     -ms-animation: color-change 1s infinite;
-    animation: color-change 0.5s infinite;
+    animation: color-change 2s infinite;
 }
 
 @-webkit-keyframes color-change {
@@ -69,7 +82,7 @@ box-shadow: 0px 0px 181px 5px rgb(80, 77, 243);
 }
 @keyframes color-change {
     0% { color: red; }
-    50% { color: indianred; }
+    50% { color: blue; }
     100% { color: red; }
 
 }
@@ -98,7 +111,7 @@ box-shadow: 0px 0px 181px 5px rgb(80, 77, 243);
 }
 .left span {
   font-family: 'Press Start 2P', cursive;
-  font-size: 1em;
+  font-size: 1.3em;
   color: #353030;
   padding-top: 20px;
 }
