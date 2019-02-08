@@ -11,8 +11,8 @@ window.onload = () => {
         calprix(){
                 this.prix = this.prix * 2; 
         }
-        
-    } 
+
+    }
 
     let score = 0;
     let multiplicateur = 1;
@@ -33,14 +33,14 @@ window.onload = () => {
 
     function game() {
         let multiplicator = multiObjet;
-        
+
         if (score >= multiplicator.prix) {
             score = score - multiplicator.prix;
             multiplicator.calprix();
             multiplicator.augmenterMultiplicateur();
 
             multiplicateur = multiplicator.multiplicateur;
-            
+
             prixaffichage.innerText = multiplicator.prix;
             compteur.innerText = multiplicator.nombre;
         }
@@ -63,3 +63,4 @@ window.onload = () => {
     })
   
 }
+
