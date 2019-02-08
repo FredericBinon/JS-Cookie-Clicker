@@ -18,18 +18,36 @@ main{
 
 button {
   background: #1D2B64;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to top, #F8CDDA, #1D2B64);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to top, #F8CDDA, #1D2B64); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: -webkit-linear-gradient(to top, #F8CDDA, #1D2B64);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #F8CDDA, #1D2B64); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
 
 button:hover {
   background: #1D2B64;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to bottom, #F8CDDA, #1D2B64);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to bottom, #F8CDDA, #1D2B64); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: -webkit-linear-gradient(to bottom, #F8CDDA, rgb(184, 36, 97));  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #F8CDDA, rgb(182, 38, 98)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   
-
 }
+
+#msg {
+  z-index: 9999;
+  width: 330px;
+  height: 180px;
+  background-color: ;
+  background-image: url("images/bulle_mamy.png");
+  background-repeat: no-repeat;
+  background-size: 80%;
+  position: fixed;
+  left: 800px;
+  top: 58px;
+  background-blend-mode: saturation;
+ 
+}
+
+
+
+
 
 
 .center {
@@ -57,7 +75,7 @@ box-shadow: 0px 0px 181px 5px rgb(80, 77, 243);
     -moz-animation: color-change 1s infinite;
     -o-animation: color-change 1s infinite;
     -ms-animation: color-change 1s infinite;
-    animation: color-change 2s infinite;
+    animation: color-change 10s infinite;
 }
 
 @-webkit-keyframes color-change {
@@ -82,7 +100,7 @@ box-shadow: 0px 0px 181px 5px rgb(80, 77, 243);
 }
 @keyframes color-change {
     0% { color: red; }
-    50% { color: blue; }
+    50% { color: yellow; }
     100% { color: red; }
 
 }
@@ -209,17 +227,27 @@ box-shadow: 0px 0px 47px -5px rgba(237,171,183,1);
 .clic:hover {
   margin-top: 5%;
   height:200px;
-  width:30%px;
   background-image: url("images/cookie.svg");
   background-repeat: no-repeat;
   background-size: 400px;
-  background-position: 50% 0%;
   font-family: 'Pacifico', cursive;
   font-size: 2em;
-  color:yellowgreen;
   transform: rotate(2080deg);
-  
+  filter: contrast(200%);
 }
+
+.clic:active {
+   width: 98%;
+   
+
+   
+   
+    
+    
+
+}
+
+
 
 button{
   width:100%;
