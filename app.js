@@ -43,6 +43,7 @@ window.onload = () => {
 
             prixaffichage.innerText = multiplicator.prix;
             compteur.innerText = multiplicator.nombre;
+            affichage.innerText = score;
         }
     }
 
