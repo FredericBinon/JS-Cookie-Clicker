@@ -1,14 +1,21 @@
 window.onload = () => {
+
     let multiObjet = {
         prix: 50,
+        nombre: 0,
+        multiplicateur: 1,
+        augmenterMultiplicateur(){
+            ++this.multiplicateur;
+            ++this.nombre;
+        },
         calprix(){
-            this.prix = this.prix * this.nombre;
-            return this.prix * this.nombre;
+                this.prix = this.prix * 2; 
         },
         nombre: 1,
         multiplicateur(){
             return ++this.nombre;
         }
+        
     } 
 
     let score = 0;
@@ -30,6 +37,23 @@ window.onload = () => {
         affichage.innerText = score;
     }
 
+
+    function game() {
+        let multiplicator = multiObjet;
+        
+        if (score >= multiplicator.prix) {
+            score = score - multiplicator.prix;
+            multiplicator.calprix();
+            multiplicator.augmenterMultiplicateur();
+
+            multiplicateur = multiplicator.multiplicateur;
+            
+            prixaffichage.innerText = multiplicator.prix;
+            compteur.innerText = multiplicator.nombre;
+        }
+    }
+
+
 /* the button element allows to modifie the score*/
     button.addEventListener("click", function(e){
         e.preventDefault();
@@ -40,6 +64,13 @@ window.onload = () => {
     multibutton.addEventListener("click", function(e){
         e.preventDefault();
         //augmenterMultiplicateur();
+<<<<<<< HEAD
+       game();
+
+    })
+
+    
+=======
         multiObjet.calprix();
         if (score >= multiObjet.prix) {
             multiplicateur = multiObjet.multiplicateur();
@@ -48,4 +79,5 @@ window.onload = () => {
             compteur.innerText = multiplicateur - 2;
         }
     })   
+>>>>>>> 621f85b1dbba3423f91c3864049634b8802fdcca
 }
