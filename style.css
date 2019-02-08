@@ -31,19 +31,16 @@ button:hover {
 }
 
 #msg {
-  z-index: 9999;
-  width: 330px;
-  height: 180px;
+  left: 793px;
+  top: 77px;
   background-color: ;
-  background-image: url("images/bulle_mamy.png");
+  background-image: url(images/bulle_mamy.png);
   background-repeat: no-repeat;
-  background-size: 80%;
-  position: fixed;
-  left: 800px;
-  top: 58px;
-  background-blend-mode: saturation;
- 
-}
+  background-size: 55%;
+  position: absolute;
+  width: 29vw;
+  height: 315px;
+  }
 
 
 
