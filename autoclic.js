@@ -11,9 +11,9 @@ window.onload = () => {
         if (boutonactive = false) {
             if (score >= 500) {
                 score=score-500;
-                setInterval
+                setInterval("score=score+1",1000);
                 boutonactive=true;
-                /* Modifier css => bouton gris*/
+                document.getElementsByName("autoclicker").className = "activated";
             }
             if (score<500){
                 /*erreur: Wesh ma gueule, il te faut plus de cookies pour ça*/
