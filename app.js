@@ -10,6 +10,7 @@ window.onload = () => {
         },
         calprix(){
                 this.prix = this.prix * 2; 
+        },
         nombre: 1,
         multiplicateur(){
             return ++this.nombre;
@@ -36,7 +37,7 @@ window.onload = () => {
         affichage.innerText = score;
     }
 
-<<<<<<< HEAD
+
     function game() {
         let multiplicator = multiObjet;
         
@@ -53,8 +54,6 @@ window.onload = () => {
     }
 
 
-=======
->>>>>>> 621f85b1dbba3423f91c3864049634b8802fdcca
 /* the button element allows to modifie the score*/
     button.addEventListener("click", function(e){
         e.preventDefault();
