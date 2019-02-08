@@ -2,18 +2,21 @@
 
 
 window.onload = () => {
+
     let multiObjet = {
         prix: 50,
-        calprix(){
-            this.prix = this.prix * this.nombre;
-            return this.prix * this.nombre;
+        nombre: 0,
+        multiplicateur: 1,
+        augmenterMultiplicateur(){
+            ++this.multiplicateur;
+            ++this.nombre;
         },
-        nombre: 1,
-        multiplicateur(){
-            
-            return ++this.nombre;
+        calprix(){
+                this.prix = this.prix * 2; 
         }
+        
     } 
+
     let score = 0;
     let multiplicateur = 1;
 
@@ -39,7 +42,20 @@ window.onload = () => {
         affichage.innerText = score;
     }
 
+    function game() {
+        let multiplicator = multiObjet;
+        
+        if (score >= multiplicator.prix) {
+            score = score - multiplicator.prix;
+            multiplicator.calprix();
+            multiplicator.augmenterMultiplicateur();
 
+            multiplicateur = multiplicator.multiplicateur;
+            
+            prixaffichage.innerText = multiplicator.prix;
+            compteur.innerText = multiplicator.nombre;
+        }
+    }
 
 
 /* the button element allows to modifie the score*/
@@ -54,14 +70,7 @@ window.onload = () => {
     multibutton.addEventListener("click", function(e){
         e.preventDefault();
         //augmenterMultiplicateur();
-        multiObjet.calprix();
-        if (score >= multiObjet.prix) {
-            multiplicateur = multiObjet.multiplicateur();
-            score = score - multiObjet.prix;
-            prixaffichage.innerText = multiObjet.prix;
-            compteur.innerText = multiplicateur - 2;
-        }
-
+       game();
 
     })
 
