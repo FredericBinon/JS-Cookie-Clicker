@@ -24,6 +24,9 @@ window.onload = () => {
     let score = 0;
     let multiplicateur = 1;
     let boutonactive=false;
+    let besoin = 1;
+    let autoclicRestants= 3;
+    let autoclicUtilises=0;
     let button = document.getElementById("clic");
     let affichage = document.getElementById("affichage");
     let multibutton = document.getElementById("multiplier");
@@ -31,6 +34,7 @@ window.onload = () => {
     let prixaffichage = document.getElementsByClassName("prix")[0];
     let compteur = document.getElementsByClassName("compteur")[0];
     let compteautoclicker= document.getElementsByClassName("compteur")[1];
+    let prixAutoclicker = document.getElementsByClassName("prix")[1];
     let bouttonBonus = document.getElementById("bonus");
 
 
@@ -41,28 +45,33 @@ window.onload = () => {
         affichage.innerText = score;
     }
 
-    function clicauto(oldScore){
-      score=oldScore+1;
+    function clicauto(oldScore, autoclicUtilises){
+      score=oldScore+autoclicUtilises;
       affichage.innerText = score;
     }
 
-    function testautoclic(boutonactive){
-      if (boutonactive == false) {
-        console.log(boutonactive);
-        if (score<10){
-            alert("erreur: Wesh ma gueule, il te faut plus de cookies pour ça");
-        }
-        if (score >= 10) {
-          score=score-10;
-          affichage.innerText = score;
-          setInterval(()=>clicauto(score),1000);
-          boutonactive=true;
-          document.getElementsByName("autoclicker")[0].className = "activated";
-          compteautoclicker.innerText = "0 Left";
-        }
+    function testautoclic(oldAutoclicRestants, oldBesoin, oldAutoclicUtilises){
+      console.log('click')
+      if (autoclicRestants<1) {
+        document.getElementsByName("autoclicker")[0].className = "activated";
+        alert("Bin non gros malin, t'as d'ja tout pris");
       }
       else {
-              alert("erreur: Bin non gros malin, tu l'as deja activé");
+        autoclicUtilises = oldAutoclicUtilises + 1;
+        autoclicRestants = oldAutoclicRestants -1;
+        console.log(autoclicUtilises);
+        if (score<besoin){
+            alert("Wesh ma gueule, il te faut plus de cookies pour ça");
+        }
+        if (score >= oldBesoin) {
+          score=score-oldBesoin;
+          besoin=oldBesoin*10;
+          console.log(besoin);
+          prixAutoclicker.innerText=besoin;
+          affichage.innerText = score;
+          setInterval(()=>clicauto(score, autoclicUtilises),1000);
+          compteautoclicker.innerText = autoclicRestants + " Left";
+        }
       }
     }
 
@@ -117,7 +126,7 @@ window.onload = () => {
     autobutton.addEventListener("click", function(e){
         e.preventDefault();
 
-        testautoclic(boutonactive);
+        testautoclic(autoclicRestants, besoin, autoclicUtilises);
     })
 
 /* the multiplicateur element allows to increment the score */
