@@ -12,7 +12,7 @@ main{
   border-width: 2em;
   border-color:#40369d;
   border-radius: 0%;
- 
+
 }
 
 
@@ -27,14 +27,16 @@ button:hover {
   background: #1D2B64;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to bottom, #F8CDDA, rgb(184, 36, 97));  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to bottom, #F8CDDA, rgb(182, 38, 98)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  
+
 }
 
 #msg {
+  display: none;
+  left: 793px;
+  top: 77px;
   z-index: 9999;
   width: 330px;
   height: 180px;
-  background-color: ;
   background-image: url("images/bulle_mamy.png");
   background-repeat: no-repeat;
   background-size: 80%;
@@ -42,8 +44,20 @@ button:hover {
   left: 800px;
   top: 58px;
   background-blend-mode: saturation;
- 
-}
+  background-size: 100%;
+  position: absolute;
+  width: 19vw;
+  height: 173px;
+  text-align: center;
+  }
+  #msg p {
+    color: red;
+    margin-top: 47px;
+    font-size: 0.9em;
+    margin-left: 625px;
+    font-family: 'Press Start 2P', cursive;
+    margin-left: 97px;
+  }
 
 
 
@@ -70,7 +84,7 @@ box-shadow: 0px 0px 181px 5px rgb(80, 77, 243);
   font-size: 2em;
   color: #fd1d1d;
   letter-spacing: 0.1em;
-  
+
     -webkit-animation: color-change 1s infinite;
     -moz-animation: color-change 1s infinite;
     -o-animation: color-change 1s infinite;
@@ -109,8 +123,8 @@ box-shadow: 0px 0px 181px 5px rgb(80, 77, 243);
   width: 100%;
   align-items: center;
   margin-top: 55px;
-  
-  
+
+
 }
 
 .left{
@@ -118,14 +132,14 @@ box-shadow: 0px 0px 181px 5px rgb(80, 77, 243);
   margin-right: 5%;
   flex-direction: column;
   justify-content: space-around;
-  background: 
+  background:
   linear-gradient(135deg, black 25%, transparent 25%) -50px 0,
   linear-gradient(225deg, black 25%, transparent 25%) -50px 0,
   linear-gradient(315deg, black 25%, transparent 25%),
-  linear-gradient(45deg, black 25%, transparent 25%);	
+  linear-gradient(45deg, black 25%, transparent 25%);
   background-size: 2em 2em;
   background-color: #3e8abd;
-  
+
 }
 .left span {
   font-family: 'Press Start 2P', cursive;
@@ -154,6 +168,10 @@ box-shadow: 0px 0px 47px -5px rgba(237,171,183,1);
   background: grey;
 }
 
+.activated:hover{
+  background: grey;
+}
+
 .prix{
   background-color:#fac780;
   margin: 10%;
@@ -171,24 +189,24 @@ box-shadow: 0px 0px 47px -5px rgba(237,171,183,1);
 .prixMulti, .nombreMulti, .prixAutoclicker, .nombreAutoclicker, .prixBonus, .tempsRestant{
   width:50%;
   padding-top: 5%;
-  
+
 }
 
 .right{
   text-align: center;
   margin-left: 5%;
   width: 50%;
-  background: 
+  background:
   linear-gradient(135deg, black 25%, transparent 25%) -50px 0,
   linear-gradient(225deg, black 25%, transparent 25%) -50px 0,
   linear-gradient(315deg, black 25%, transparent 25%),
-  linear-gradient(45deg, black 25%, transparent 25%);	
+  linear-gradient(45deg, black 25%, transparent 25%);
   background-size: 2em 2em;
   background-color: #3e8abd;
   display: flex;
   justify-content: center;
   align-items: center;
-  
+
 }
 
 .right h2{
@@ -197,7 +215,7 @@ box-shadow: 0px 0px 47px -5px rgba(237,171,183,1);
   font-family: 'Pacifico', cursive;
   color:white;
   }
-  
+
 
 .affichage{
   margin-bottom: 15vh;
@@ -221,8 +239,8 @@ box-shadow: 0px 0px 47px -5px rgba(237,171,183,1);
   transition: all 10s;
   transition-timing-function: cubic-bezier(1, 1.13, -4.72, 2.38);
 
-  
-  
+
+
 }
 .clic:hover {
   margin-top: 5%;
@@ -232,18 +250,18 @@ box-shadow: 0px 0px 47px -5px rgba(237,171,183,1);
   background-size: 400px;
   font-family: 'Pacifico', cursive;
   font-size: 2em;
-  transform: rotate(2080deg);
-  filter: contrast(200%);
+  transform: rotate(6080deg);
+  filter: hue-rotate(300deg);
 }
 
 .clic:active {
    width: 98%;
-   
 
-   
-   
-    
-    
+
+
+
+
+
 
 }
 
