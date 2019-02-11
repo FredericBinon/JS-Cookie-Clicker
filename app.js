@@ -16,11 +16,14 @@ window.onload = () => {
 
     let score = 0;
     let multiplicateur = 1;
+    let boutonactive=false;
     let button = document.getElementById("clic");
     let affichage = document.getElementById("affichage");
     let multibutton = document.getElementById("multiplier");
+    let autobutton = document.getElementsByName("autoclicker")[0];
     let prixaffichage = document.getElementsByClassName("prix")[0];
     let compteur = document.getElementsByClassName("compteur")[0];
+    let compteautoclicker = document.getElementsByClassName("compteur")[1];
 
 
     function click(multiplicateur) {
@@ -30,6 +33,27 @@ window.onload = () => {
         affichage.innerText = score;
     }
 
+    function clicauto(oldScore){
+      score=oldScore+1;
+      affichage.innerText = score;
+    }
+
+    function testautoclic(boutonactive){
+      if (boutonactive == false) {
+        console.log(boutonactive);
+        if (score<10){
+            alert("erreur: Wesh ma gueule, il te faut plus de cookies pour ça");
+        }
+        if (score >= 10) {
+          score=score-10;
+          affichage.innerText = score;
+          setInterval(()=>clicauto(score),1000);
+        }
+      }
+      else {
+              alert("erreur: Bin non gros malin, tu l'as deja activé");
+      }
+    }
 
     function game() {
         let multiplicator = multiObjet;
@@ -42,7 +66,7 @@ window.onload = () => {
             multiplicateur = multiplicator.multiplicateur;
 
             prixaffichage.innerText = multiplicator.prix;
-            compteur.innerText = "X" + multiplicator.nombre;
+            compteur.innerText ="X" + multiplicator.nombre;
             affichage.innerText = score;
         }
     }
@@ -52,6 +76,15 @@ window.onload = () => {
     button.addEventListener("click", function(e){
         e.preventDefault();
         click(multiplicateur);
+    })
+
+    autobutton.addEventListener("click", function(e){
+        e.preventDefault();
+
+        testautoclic(boutonactive);
+        boutonactive=true;
+        document.getElementsByName("autoclicker")[0].className = "activated";
+        compteautoclicker.innerText = "0 Left";
     })
 
 /* the multiplicateur element allows to increment the score */
