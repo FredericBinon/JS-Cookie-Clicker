@@ -124,6 +124,7 @@ window.onload = () => {
 /* the multiplicateur element allows to increment the score */
     multibutton.addEventListener("click", function(e){
         e.preventDefault();
+
         //augmenterMultiplicateur();
 
        game();
@@ -131,10 +132,9 @@ window.onload = () => {
     })
 
     bouttonBonus.addEventListener("click",function (e){
-        e.preventDefault ();
+        e.preventDefault ()
 
         
     })
      
 }
-
