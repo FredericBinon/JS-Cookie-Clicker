@@ -9,7 +9,7 @@ window.onload = () => {
             ++this.nombre;
         },
         calprix(){
-                this.prix = this.prix * 2; 
+                this.prix = this.prix * 2;
         }
 
     }
@@ -22,7 +22,7 @@ window.onload = () => {
     let prixaffichage = document.getElementsByClassName("prix")[0];
     let compteur = document.getElementsByClassName("compteur")[0];
 
-  
+
     function click(multiplicateur) {
         for (var i= 1; i <= multiplicateur; i++) {
             score++;
@@ -68,6 +68,5 @@ window.onload = () => {
        game();
 
     })
-  
-}
 
+}
