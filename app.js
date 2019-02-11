@@ -30,8 +30,6 @@ window.onload = () => {
     let autobutton = document.getElementsByName("autoclicker")[0];
     let prixaffichage = document.getElementsByClassName("prix")[0];
     let compteur = document.getElementsByClassName("compteur")[0];
-    let compteautoclicker = document.getElementsByClassName("compteur")[1];
-    let bouttonBonus = document.getElementById ("bonus");
 
 
     function click(multiplicateur) {
@@ -105,7 +103,7 @@ window.onload = () => {
                 i++;
             } while(i<1000)
         }
-    }
+    } 
 
 
 /* the button element allows to modifie the score*/
@@ -113,7 +111,6 @@ window.onload = () => {
         e.preventDefault();
         click(multiplicateur);
     })
-
 
     autobutton.addEventListener("click", function(e){
         e.preventDefault();
@@ -125,6 +122,7 @@ window.onload = () => {
     multibutton.addEventListener("click", function(e){
         e.preventDefault();
         //augmenterMultiplicateur();
+
         game();
     })
 
@@ -135,3 +133,4 @@ window.onload = () => {
     })
 
 }
+
