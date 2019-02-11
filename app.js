@@ -30,12 +30,9 @@ window.onload = () => {
     let autobutton = document.getElementsByName("autoclicker")[0];
     let prixaffichage = document.getElementsByClassName("prix")[0];
     let compteur = document.getElementsByClassName("compteur")[0];
-<<<<<<< HEAD
     let compteautoclicker = document.getElementsByClassName("compteur")[1];
-=======
     let bouttonBonus = document.getElementById ("bonus");
 
->>>>>>> 70cb841c4c2a5ea468c61bf5843ba164379ef086
 
 
     function click(multiplicateur) {
