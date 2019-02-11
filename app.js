@@ -57,6 +57,9 @@ window.onload = () => {
           score=score-10;
           affichage.innerText = score;
           setInterval(()=>clicauto(score),1000);
+                          boutonactive=true;
+          document.getElementsByName("autoclicker")[0].className = "activated";
+          compteautoclicker.innerText = "0 Left";
         }
       }
       else {
@@ -81,8 +84,8 @@ window.onload = () => {
             document.getElementById("msg").style.display = "block";
             setTimeout(function () {
                 document.getElementById("msg").style.display = "none";
-           }, 3000 ); 
-           
+           }, 3000 );
+
         }
     }
     function bonus () {
@@ -116,9 +119,6 @@ window.onload = () => {
         e.preventDefault();
 
         testautoclic(boutonactive);
-        boutonactive=true;
-        document.getElementsByName("autoclicker")[0].className = "activated";
-        compteautoclicker.innerText = "0 Left";
     })
 
 /* the multiplicateur element allows to increment the score */
@@ -133,8 +133,7 @@ window.onload = () => {
     bouttonBonus.addEventListener("click",function (e){
         e.preventDefault ();
 
-        
-    })
-     
-}
 
+    })
+
+}
