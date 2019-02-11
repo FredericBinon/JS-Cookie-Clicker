@@ -16,7 +16,8 @@ window.onload = () => {
     let bonusObjet = {
         prix: 100,
         tempsFin : 0,
-        tempsDebut : 0
+        tempsDebut : 0,
+        count : 0
 
     }
 
@@ -89,25 +90,20 @@ window.onload = () => {
     }
     function bonus () {
         let bonusObj = bonusObjet;
-        if (score < bonusObj.prix) {
-            console.log("message erreur")
-            //message erreur s'affiche
-        }
-        else if (score >= bonusObj.prix) {
-            let i;
+        if (score >= bonusObj.prix && bonusObj.count === 0) {
             let dat = new Date();
             bonusObj.tempsDebut = dat.getSeconds();
             bonusObj.tempsFin = bonusObj.tempsDebut + 30;
-            do{
-                if(bonusObj.tempsFin > new Date().getSeconds()) {
-                    console.log("à clické")
-                    return 1;
-                } 
-                else{
-                    
-                }
-                i++;
-            } while(i<1000)
+            score= score *2;
+            affichage.innerText = score; 
+            ++bonusObj.count;
+        } else if (score >= bonusObj.prix && bonusObj.count !== 0){
+            let n = new Date().getSeconds();
+            if(n < bonusObj.tempsFin){
+                score= score *2;
+                affichage.innerText = score;  
+            }
+
         }
     }
 
