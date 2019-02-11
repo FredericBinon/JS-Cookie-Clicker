@@ -2,7 +2,7 @@ window.onload = () => {
 
     let multiObjet = {
         prix: 50,
-        nombre: 0,
+        nombre: 1,
         multiplicateur: 1,
         augmenterMultiplicateur(){
             ++this.multiplicateur;
