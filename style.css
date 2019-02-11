@@ -34,23 +34,16 @@ button:hover {
   display: none;
   left: 793px;
   top: 77px;
-  background-image: url(images/bulle_mamy.png);
-<<<<<<< HEAD
-=======
   z-index: 9999;
   width: 330px;
   height: 180px;
-  background-color: ;
   background-image: url("images/bulle_mamy.png");
->>>>>>> 7d62ee38463ddba3bc5c8d739a6cb3690755efcf
   background-repeat: no-repeat;
   background-size: 80%;
   position: fixed;
   left: 800px;
   top: 58px;
   background-blend-mode: saturation;
-
-}
   background-size: 100%;
   position: absolute;
   width: 19vw;
