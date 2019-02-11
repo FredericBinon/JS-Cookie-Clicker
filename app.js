@@ -1,16 +1,5 @@
 
 window.onload = () => {
-    let score = 0;
-    let multiplicateur = 1;
-    let button = document.getElementById("clic");
-    let affichage = document.getElementById("affichage");
-    let multibutton = document.getElementById("multiplier");
-    let prixaffichage = document.getElementsByClassName("prix")[0];
-    let compteur = document.getElementsByClassName("compteur")[0];
-    let bouttonBonus = document.getElementById ("bonus");
-
-/*objets*/
-window.onload = () => {
     let multiObjet = {
         prix: 50,
         nombre:1,
@@ -31,11 +20,6 @@ window.onload = () => {
 
     }
 
-/*fonctions*/
-      prix:5000,
-      tempsFin : 0,
-      tempsDebut : 0,
-    }
 
     let score = 0;
     let multiplicateur = 1;
@@ -57,7 +41,7 @@ window.onload = () => {
         affichage.innerText = score;
     }
 
-    function clicauto(oldScore){
+    function clicauto(oldScore){ 
       score=oldScore+1;
       affichage.innerText = score;
     }
@@ -154,10 +138,6 @@ window.onload = () => {
     bouttonBonus.addEventListener("click",function (e){
         e.preventDefault ();
         bonus();
-
-    bouttonBonus.addEventListener("click",function (e){
-        e.preventDefault ()
-
     })
     
      
