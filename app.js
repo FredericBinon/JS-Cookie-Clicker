@@ -1,6 +1,4 @@
 
-
-
 window.onload = () => {
     let multiObjet = {
         prix: 50,
@@ -16,10 +14,12 @@ window.onload = () => {
     }
 
     let bonusObjet = {
-      prix:5000,
-      tempsFin : 0,
-      tempsDebut : 0,
+        prix: 100,
+        tempsFin : 0,
+        tempsDebut : 0
+
     }
+
 
     let score = 0;
     let multiplicateur = 1;
@@ -41,7 +41,7 @@ window.onload = () => {
         affichage.innerText = score;
     }
 
-    function clicauto(oldScore){
+    function clicauto(oldScore){ 
       score=oldScore+1;
       affichage.innerText = score;
     }
@@ -107,7 +107,11 @@ window.onload = () => {
             bonusObj.tempsFin = bonusObj.tempsDebut + 30;
             do{
                 if(bonusObj.tempsFin > new Date().getSeconds()) {
+                    console.log("à clické")
                     return 1;
+                } 
+                else{
+                    
                 }
                 i++;
             } while(i<1000)
@@ -137,11 +141,10 @@ window.onload = () => {
         game();
     })
 
-
+/* the bonus element multiplied the score suring 30sec */
     bouttonBonus.addEventListener("click",function (e){
-        e.preventDefault ()
-
-
+        e.preventDefault ();
+        bonus();
     })
     
      
