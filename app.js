@@ -14,6 +14,13 @@ window.onload = () => {
 
     }
 
+    let bonusObjet = {
+        prix: 5000,
+        tempsFin : 0,
+        tempsDebut : 0
+
+    }
+
     let score = 0;
     let multiplicateur = 1;
     let boutonactive=false;
@@ -23,7 +30,12 @@ window.onload = () => {
     let autobutton = document.getElementsByName("autoclicker")[0];
     let prixaffichage = document.getElementsByClassName("prix")[0];
     let compteur = document.getElementsByClassName("compteur")[0];
+<<<<<<< HEAD
     let compteautoclicker = document.getElementsByClassName("compteur")[1];
+=======
+    let bouttonBonus = document.getElementById ("bonus");
+
+>>>>>>> 70cb841c4c2a5ea468c61bf5843ba164379ef086
 
 
     function click(multiplicateur) {
@@ -68,9 +80,34 @@ window.onload = () => {
             prixaffichage.innerText = multiplicator.prix;
             compteur.innerText ="X" + multiplicator.nombre;
             affichage.innerText = score;
+        } else {
+            document.getElementById("msg").style.display = "block";
+            setTimeout(function () {
+                document.getElementById("msg").style.display = "none";
+           }, 3000 ); 
+           
         }
     }
+    function bonus () {
+        let bonusObj = bonusObjet;
+        if (score < bonusObj.prix) {
+            console.log("message erreur")
+            //message erreur s'affiche
+        }
+        else if (score >= bonusObj.prix) {
+            let i;
+            let dat = new Date();
+            bonusObj.tempsDebut = dat.getSeconds();
+            bonusObj.tempsFin = bonusObj.tempsDebut + 30;
+            do{
+                if(bonusObj.tempsFin > new Date().getSeconds()) {
+                    return 1;
+                }
+                i++;
+            } while(i<1000)
+        }
 
+    }
 
 /* the button element allows to modifie the score*/
     button.addEventListener("click", function(e){
@@ -96,4 +133,11 @@ window.onload = () => {
 
     })
 
+    bouttonBonus.addEventListener("click",function (e){
+        e.preventDefault ();
+
+        
+    })
+     
 }
+
