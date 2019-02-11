@@ -1,4 +1,14 @@
 window.onload = () => {
+    let score = 0;
+    let multiplicateur = 1;
+    let button = document.getElementById("clic");
+    let affichage = document.getElementById("affichage");
+    let multibutton = document.getElementById("multiplier");
+    let prixaffichage = document.getElementsByClassName("prix")[0];
+    let compteur = document.getElementsByClassName("compteur")[0];
+    let bouttonBonus = document.getElementById ("bonus");
+
+/*objets*/
 
     let multiObjet = {
         prix: 50,
@@ -15,22 +25,13 @@ window.onload = () => {
     }
 
     let bonusObjet = {
-        prix: 5000,
+        prix: 100,
         tempsFin : 0,
         tempsDebut : 0
 
     }
 
-    let score = 0;
-    let multiplicateur = 1;
-    let button = document.getElementById("clic");
-    let affichage = document.getElementById("affichage");
-    let multibutton = document.getElementById("multiplier");
-    let prixaffichage = document.getElementsByClassName("prix")[0];
-    let compteur = document.getElementsByClassName("compteur")[0];
-    let bouttonBonus = document.getElementById ("bonus");
-
-
+/*fonctions*/
 
     function click(multiplicateur) {
         for (var i= 1; i <= multiplicateur; i++) {
@@ -38,8 +39,6 @@ window.onload = () => {
         }
         affichage.innerText = score;
     }
-
-
     function game() {
         let multiplicator = multiObjet;
 
@@ -68,7 +67,11 @@ window.onload = () => {
             bonusObj.tempsFin = bonusObj.tempsDebut + 30;
             do{
                 if(bonusObj.tempsFin > new Date().getSeconds()) {
+                    console.log("à clické")
                     return 1;
+                } 
+                else{
+                    
                 }
                 i++;
             } while(i<1000)
@@ -91,8 +94,10 @@ window.onload = () => {
 
     })
 
+/* the bonus element multiplied the score suring 30sec */
     bouttonBonus.addEventListener("click",function (e){
         e.preventDefault ();
+        bonus();
 
         
     })
