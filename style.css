@@ -89,33 +89,63 @@ box-shadow: 0px 0px 181px 5px rgb(80, 77, 243);
     -moz-animation: color-change 1s infinite;
     -o-animation: color-change 1s infinite;
     -ms-animation: color-change 1s infinite;
-    animation: color-change 10s infinite;
+    animation: color-change 2s infinite;
 }
 
 @-webkit-keyframes color-change {
-    0% { color: red; }
-    50% { color: blue; }
-    100% { color: red; }
+  0% {
+    color: #202e72;
+}
+50% {
+    color: #304d5b;
+}
+100% {
+    color: #1e3036;
+}
 }
 @-moz-keyframes color-change {
-    0% { color: red; }
-    50% { color: blue; }
-    100% { color: red; }
+  0% {
+    color: #202e72;
+}
+50% {
+    color: #304d5b;
+}
+100% {
+    color: #1e3036;
+}
 }
 @-ms-keyframes color-change {
-    0% { color: red; }
-    50% { color: blue; }
-    100% { color: red; }
+  0% {
+    color: #202e72;
+}
+50% {
+    color: #304d5b;
+}
+100% {
+    color: #1e3036;
+}
 }
 @-o-keyframes color-change {
-    0% { color: red; }
-    50% { color: blue; }
-    100% { color: red; }
+   0% {
+    color: #202e72;
+}
+50% {
+    color: #304d5b;
+}
+100% {
+    color: #1e3036;
+}
 }
 @keyframes color-change {
-    0% { color: red; }
-    50% { color: yellow; }
-    100% { color: red; }
+  0% {
+    color: #202e72;
+}
+50% {
+    color: #304d5b;
+}
+100% {
+    color: #1e3036;
+}
 
 }
 .center img {
