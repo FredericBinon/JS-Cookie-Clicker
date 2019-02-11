@@ -4,16 +4,23 @@
 window.onload = () => {
     let multiObjet = {
         prix: 50,
-        calprix(){
-            this.prix = this.prix * this.nombre;
-            return this.prix * this.nombre;
+        nombre:1,
+        multiplicateur:1,
+        augmenterMultiplicateur(){
+          ++this.multiplicateur;
+          ++this.nombre;
         },
-        nombre: 1,
-        multiplicateur(){
-            
-            return ++this.nombre;
+        calprix(){
+          this.prix = this.prix*2;
         }
-    } 
+    }
+
+    let bonusObjet = {
+      prix:5000,
+      tempsFin : 0,
+      tempsDebut : 0,
+    }
+
     let score = 0;
     let multiplicateur = 1;
     let boutonactive=false;
@@ -23,14 +30,10 @@ window.onload = () => {
     let autobutton = document.getElementsByName("autoclicker")[0];
     let prixaffichage = document.getElementsByClassName("prix")[0];
     let compteur = document.getElementsByClassName("compteur")[0];
+    let compteautoclicker= document.getElementsByClassName("compteur")[1];
+    let bouttonBonus = document.getElementById("bonus");
 
 
-
-
-  /*   function augmenterMultiplicateur () {
-        multiplicateur++;
-    }
- */
     function click(multiplicateur) {
         for (var i= 1; i <= multiplicateur; i++) {
             score++;
@@ -53,7 +56,7 @@ window.onload = () => {
           score=score-10;
           affichage.innerText = score;
           setInterval(()=>clicauto(score),1000);
-                          boutonactive=true;
+          boutonactive=true;
           document.getElementsByName("autoclicker")[0].className = "activated";
           compteautoclicker.innerText = "0 Left";
         }
@@ -102,6 +105,8 @@ window.onload = () => {
                 i++;
             } while(i<1000)
         }
+    }
+
 
 
 /* the button element allows to modifie the score*/
@@ -120,16 +125,12 @@ window.onload = () => {
     multibutton.addEventListener("click", function(e){
         e.preventDefault();
         //augmenterMultiplicateur();
-        multiObjet.calprix();
-        if (score >= multiObjet.prix) {
-            multiplicateur = multiObjet.multiplicateur();
-            score = score - multiObjet.prix;
-            prixaffichage.innerText = multiObjet.prix;
-            compteur.innerText = multiplicateur - 2;
-        }
 
-
-
+        game();
     })
 
+    bouttonBonus.addEventListener("click", function(e){
+      e.preventDefault();
+
+    })
 }
