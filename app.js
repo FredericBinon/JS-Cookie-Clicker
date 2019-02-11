@@ -1,24 +1,24 @@
-window.onload = () => {
 
+
+
+window.onload = () => {
     let multiObjet = {
         prix: 50,
-        nombre: 1,
-        multiplicateur: 1,
+        nombre:1,
+        multiplicateur:1,
         augmenterMultiplicateur(){
-            ++this.multiplicateur;
-            ++this.nombre;
+          ++this.multiplicateur;
+          ++this.nombre;
         },
         calprix(){
-                this.prix = this.prix * 2;
+          this.prix = this.prix*2;
         }
-
     }
 
     let bonusObjet = {
-        prix: 5000,
-        tempsFin : 0,
-        tempsDebut : 0
-
+      prix:5000,
+      tempsFin : 0,
+      tempsDebut : 0,
     }
 
     let score = 0;
@@ -32,7 +32,6 @@ window.onload = () => {
     let compteur = document.getElementsByClassName("compteur")[0];
     let compteautoclicker = document.getElementsByClassName("compteur")[1];
     let bouttonBonus = document.getElementById ("bonus");
-
 
 
     function click(multiplicateur) {
@@ -57,7 +56,7 @@ window.onload = () => {
           score=score-10;
           affichage.innerText = score;
           setInterval(()=>clicauto(score),1000);
-                          boutonactive=true;
+          boutonactive=true;
           document.getElementsByName("autoclicker")[0].className = "activated";
           compteautoclicker.innerText = "0 Left";
         }
@@ -106,14 +105,15 @@ window.onload = () => {
                 i++;
             } while(i<1000)
         }
-
     }
+
 
 /* the button element allows to modifie the score*/
     button.addEventListener("click", function(e){
         e.preventDefault();
         click(multiplicateur);
     })
+
 
     autobutton.addEventListener("click", function(e){
         e.preventDefault();
@@ -125,15 +125,13 @@ window.onload = () => {
     multibutton.addEventListener("click", function(e){
         e.preventDefault();
         //augmenterMultiplicateur();
-
-       game();
-
+        game();
     })
 
-    bouttonBonus.addEventListener("click",function (e){
-        e.preventDefault ();
+    bouttonBonus.addEventListener("click", function(e){
+      e.preventDefault();
 
-
+      
     })
 
 }
