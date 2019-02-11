@@ -16,9 +16,11 @@ window.onload = () => {
     } 
     let score = 0;
     let multiplicateur = 1;
+    let boutonactive=false;
     let button = document.getElementById("clic");
     let affichage = document.getElementById("affichage");
     let multibutton = document.getElementById("multiplier");
+    let autobutton = document.getElementsByName("autoclicker")[0];
     let prixaffichage = document.getElementsByClassName("prix")[0];
     let compteur = document.getElementsByClassName("compteur")[0];
 
@@ -36,6 +38,27 @@ window.onload = () => {
         affichage.innerText = score;
     }
 
+    function clicauto(oldScore){
+      score=oldScore+1;
+      affichage.innerText = score;
+    }
+
+    function testautoclic(boutonactive){
+      if (boutonactive == false) {
+        console.log(boutonactive);
+        if (score<10){
+            alert("erreur: Wesh ma gueule, il te faut plus de cookies pour ça");
+        }
+        if (score >= 10) {
+          score=score-10;
+          affichage.innerText = score;
+          setInterval(()=>clicauto(score),1000);
+        }
+      }
+      else {
+              alert("erreur: Bin non gros malin, tu l'as deja activé");
+      }
+    }
 
 
 
@@ -44,7 +67,6 @@ window.onload = () => {
         e.preventDefault();
         click(multiplicateur);
     })
-
 
 
 /* the multiplicateur element allows to increment the score */
