@@ -60,6 +60,68 @@ button:hover {
   }
 
 
+#msgautoclick {
+  display: none;
+  left: 793px;
+  top: 77px;
+  z-index: 9999;
+  width: 330px;
+  height: 180px;
+  background-image: url("images/bulle_mamy.png");
+  background-repeat: no-repeat;
+  background-size: 80%;
+  position: fixed;
+  left: 800px;
+  top: 58px;
+  background-blend-mode: saturation;
+  background-size: 100%;
+  position: absolute;
+  width: 19vw;
+  height: 173px;
+  text-align: center;
+  }
+  #msgautoclick p {
+    color: red;
+    margin-top: 47px;
+    font-size: 0.9em;
+    margin-left: 625px;
+    font-family: 'Press Start 2P', cursive;
+    margin-left: 97px;
+  }
+
+
+#msgbonus {
+  display: none;
+  left: 793px;
+  top: 77px;
+  z-index: 9999;
+  width: 330px;
+  height: 180px;
+  background-image: url("images/bulle_mamy.png");
+  background-repeat: no-repeat;
+  background-size: 80%;
+  position: fixed;
+  left: 800px;
+  top: 58px;
+  background-blend-mode: saturation;
+  background-size: 100%;
+  position: absolute;
+  width: 19vw;
+  height: 173px;
+  text-align: center;
+  }
+  #msgbonus p {
+    color: red;
+    margin-top: 47px;
+    font-size: 0.9em;
+    margin-left: 625px;
+    font-family: 'Press Start 2P', cursive;
+    margin-left: 97px;
+  }
+
+
+
+
 
 
 
@@ -89,33 +151,63 @@ box-shadow: 0px 0px 181px 5px rgb(80, 77, 243);
     -moz-animation: color-change 1s infinite;
     -o-animation: color-change 1s infinite;
     -ms-animation: color-change 1s infinite;
-    animation: color-change 10s infinite;
+    animation: color-change 9s infinite;
 }
 
 @-webkit-keyframes color-change {
-    0% { color: red; }
-    50% { color: blue; }
-    100% { color: red; }
+  0% {
+    color: #202e72;
+}
+50% {
+    color: #304d5b;
+}
+100% {
+    color: #1e3036;
+}
 }
 @-moz-keyframes color-change {
-    0% { color: red; }
-    50% { color: blue; }
-    100% { color: red; }
+  0% {
+    color: #202e72;
+}
+50% {
+    color: #304d5b;
+}
+100% {
+    color: #1e3036;
+}
 }
 @-ms-keyframes color-change {
-    0% { color: red; }
-    50% { color: blue; }
-    100% { color: red; }
+  0% {
+    color: #202e72;
+}
+50% {
+    color: #304d5b;
+}
+100% {
+    color: #1e3036;
+}
 }
 @-o-keyframes color-change {
-    0% { color: red; }
-    50% { color: blue; }
-    100% { color: red; }
+   0% {
+    color: #202e72;
+}
+50% {
+    color: #304d5b;
+}
+100% {
+    color: #1e3036;
+}
 }
 @keyframes color-change {
-    0% { color: red; }
-    50% { color: yellow; }
-    100% { color: red; }
+  0% {
+    color: #d65c86;
+}
+50% {
+    color: #304d5b;
+}
+100% {
+    color: #1e3036;
+}
 
 }
 .center img {

@@ -1,6 +1,4 @@
 
-
-
 window.onload = () => {
     let multiObjet = {
         prix: 50,
@@ -16,10 +14,13 @@ window.onload = () => {
     }
 
     let bonusObjet = {
-      prix:5000,
-      tempsFin : 0,
-      tempsDebut : 0,
+        prix: 100,
+        tempsFin : 0,
+        tempsDebut : 0,
+        count : 0
+
     }
+
 
     let score = 0;
     let multiplicateur = 1;
@@ -98,23 +99,23 @@ window.onload = () => {
     }
     function bonus () {
         let bonusObj = bonusObjet;
-        if (score < bonusObj.prix) {
-            console.log("message erreur")
-            //message erreur s'affiche
-        }
-        else if (score >= bonusObj.prix) {
-            let i;
+        if (score >= bonusObj.prix && bonusObj.count === 0) {
             let dat = new Date();
             bonusObj.tempsDebut = dat.getSeconds();
             bonusObj.tempsFin = bonusObj.tempsDebut + 30;
-            do{
-                if(bonusObj.tempsFin > new Date().getSeconds()) {
-                    return 1;
-                }
-                i++;
-            } while(i<1000)
+            score= score *2;
+            affichage.innerText = score; 
+            ++bonusObj.count;
+        } else if (score >= bonusObj.prix && bonusObj.count !== 0){
+            let n = new Date().getSeconds();
+            if(n < bonusObj.tempsFin){
+                score= score *2;
+                affichage.innerText = score;  
+            }
+
         }
     }
+
 
 
 /* the button element allows to modifie the score*/
@@ -132,15 +133,18 @@ window.onload = () => {
 /* the multiplicateur element allows to increment the score */
     multibutton.addEventListener("click", function(e){
         e.preventDefault();
+
         //augmenterMultiplicateur();
 
         game();
     })
 
-    bouttonBonus.addEventListener("click", function(e){
-      e.preventDefault();
-
-
+/* the bonus element multiplied the score suring 30sec */
+    bouttonBonus.addEventListener("click",function (e){
+        e.preventDefault ();
+        bonus();
     })
-
+    
+     
 }
+
