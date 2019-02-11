@@ -63,7 +63,6 @@ window.onload = () => {
       }
     }
 
-<<<<<<< HEAD
     function game() {
         let multiplicator = multiObjet;
 
@@ -103,8 +102,6 @@ window.onload = () => {
                 i++;
             } while(i<1000)
         }
-=======
->>>>>>> defe181720344bb372e69d15e713b5db6d13bc2b
 
 
 /* the button element allows to modifie the score*/
@@ -113,14 +110,11 @@ window.onload = () => {
         click(multiplicateur);
     })
 
-<<<<<<< HEAD
     autobutton.addEventListener("click", function(e){
         e.preventDefault();
 
         testautoclic(boutonactive);
     })
-=======
->>>>>>> defe181720344bb372e69d15e713b5db6d13bc2b
 
 /* the multiplicateur element allows to increment the score */
     multibutton.addEventListener("click", function(e){
@@ -135,14 +129,7 @@ window.onload = () => {
         }
 
 
-<<<<<<< HEAD
 
     })
 
 }
-=======
-    })
-
-    
-}
->>>>>>> defe181720344bb372e69d15e713b5db6d13bc2b
