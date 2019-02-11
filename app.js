@@ -1,24 +1,24 @@
-window.onload = () => {
 
+
+
+window.onload = () => {
     let multiObjet = {
         prix: 50,
-        nombre: 1,
-        multiplicateur: 1,
+        nombre:1,
+        multiplicateur:1,
         augmenterMultiplicateur(){
-            ++this.multiplicateur;
-            ++this.nombre;
+          ++this.multiplicateur;
+          ++this.nombre;
         },
         calprix(){
-                this.prix = this.prix * 2;
+          this.prix = this.prix*2;
         }
-
     }
 
     let bonusObjet = {
-        prix: 5000,
-        tempsFin : 0,
-        tempsDebut : 0
-
+      prix:5000,
+      tempsFin : 0,
+      tempsDebut : 0,
     }
 
     let score = 0;
@@ -30,9 +30,8 @@ window.onload = () => {
     let autobutton = document.getElementsByName("autoclicker")[0];
     let prixaffichage = document.getElementsByClassName("prix")[0];
     let compteur = document.getElementsByClassName("compteur")[0];
-    let compteautoclicker = document.getElementsByClassName("compteur")[1];
-    let bouttonBonus = document.getElementById ("bonus");
-
+    let compteautoclicker= document.getElementsByClassName("compteur")[1];
+    let bouttonBonus = document.getElementById("bonus");
 
 
     function click(multiplicateur) {
@@ -57,6 +56,9 @@ window.onload = () => {
           score=score-10;
           affichage.innerText = score;
           setInterval(()=>clicauto(score),1000);
+          boutonactive=true;
+          document.getElementsByName("autoclicker")[0].className = "activated";
+          compteautoclicker.innerText = "0 Left";
         }
       }
       else {
@@ -81,8 +83,8 @@ window.onload = () => {
             document.getElementById("msg").style.display = "block";
             setTimeout(function () {
                 document.getElementById("msg").style.display = "none";
-           }, 3000 ); 
-           
+           }, 3000 );
+
         }
     }
     function bonus () {
@@ -103,8 +105,9 @@ window.onload = () => {
                 i++;
             } while(i<1000)
         }
-
     }
+
+
 
 /* the button element allows to modifie the score*/
     button.addEventListener("click", function(e){
@@ -116,9 +119,6 @@ window.onload = () => {
         e.preventDefault();
 
         testautoclic(boutonactive);
-        boutonactive=true;
-        document.getElementsByName("autoclicker")[0].className = "activated";
-        compteautoclicker.innerText = "0 Left";
     })
 
 /* the multiplicateur element allows to increment the score */
@@ -127,14 +127,16 @@ window.onload = () => {
 
         //augmenterMultiplicateur();
 
-       game();
-
+        game();
     })
+
 
     bouttonBonus.addEventListener("click",function (e){
         e.preventDefault ()
 
-        
+
     })
+    
      
 }
+
