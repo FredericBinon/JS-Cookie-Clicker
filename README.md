@@ -84,7 +84,7 @@ Que ce soit beau ! Pas d'images !
 
 
 ## Calendrier
-### Lundi
+### mercredi 06/02
 - visualisation de la video SRCUM
 - creation d'un Repos GitHub
 * Master
@@ -95,10 +95,15 @@ Que ce soit beau ! Pas d'images !
 - Amalia et Arnaud débute le code en JS pour lier le "clic" au "Score"
 - Frederic et Andres créent le design de base HTML et CSS visualisation des boutons. 
 
-### Mardi
+### jeudi 07/02
 - mise en place du programme de la journée
 - organisation des branches sur Git Hub.
 - Amalia et Arnaud: fonction du boutton Multiplicateur, de son prix et de son nombre sur .JS
 - Mathilde et Andres: application du design en .html et .css
 - Frerderic: previsualisation du code sur papier en francais du futur code. (UML)
+
+### Vendredi 08/02
+- resolution des conflits entre le bouton "multiplicateur"&"autoclicker" Arnaud, Amalia et Frederic
+- debut du codage pour le bouton "bonus" Mathilde
+- amélioration du design .CSS .PVG Andres
 
