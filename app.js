@@ -51,7 +51,10 @@ window.onload = () => {
       if (boutonactive == false) {
         console.log(boutonactive);
         if (score<10){
-            alert("erreur: Wesh ma gueule, il te faut plus de cookies pour ça");
+            document.getElementById("msgautoclick").style.display = "block";
+            setTimeout(function () {
+                document.getElementById("msgautoclick").style.display = "none";
+           }, 3000 );
         }
         if (score >= 10) {
           score=score-10;
@@ -63,7 +66,11 @@ window.onload = () => {
         }
       }
       else {
-              alert("erreur: Bin non gros malin, tu l'as deja activé");
+          alert("test of message");
+        /*document.getElementById("msgbonus").style.display = "block";
+        setTimeout(function () {
+            document.getElementById("msgbonus").style.display = "none";
+       }, 3000 );*/
       }
     }
 
