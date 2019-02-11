@@ -44,6 +44,12 @@ window.onload = () => {
             prixaffichage.innerText = multiplicator.prix;
             compteur.innerText = "X" + multiplicator.nombre;
             affichage.innerText = score;
+        } else {
+            document.getElementById("msg").style.display = "block";
+            setTimeout(function () {
+                document.getElementById("msg").style.display = "none";
+           }, 3000 ); 
+           
         }
     }
 
