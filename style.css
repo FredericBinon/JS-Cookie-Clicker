@@ -151,7 +151,7 @@ box-shadow: 0px 0px 181px 5px rgb(80, 77, 243);
     -moz-animation: color-change 1s infinite;
     -o-animation: color-change 1s infinite;
     -ms-animation: color-change 1s infinite;
-    animation: color-change 2s infinite;
+    animation: color-change 9s infinite;
 }
 
 @-webkit-keyframes color-change {
