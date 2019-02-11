@@ -31,15 +31,24 @@ button:hover {
 }
 
 #msg {
+  display: none;
   left: 793px;
   top: 77px;
-  background-color: ;
   background-image: url(images/bulle_mamy.png);
   background-repeat: no-repeat;
-  background-size: 55%;
+  background-size: 100%;
   position: absolute;
-  width: 29vw;
-  height: 315px;
+  width: 19vw;
+  height: 173px;
+  text-align: center;
+  }
+  #msg p {
+    color: red;
+    margin-top: 47px;
+    font-size: 0.9em;
+    margin-left: 55px;
+    font-family: 'Press Start 2P', cursive;
+    margin-left: 97px;
   }
 
 
