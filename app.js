@@ -105,6 +105,8 @@ window.onload = () => {
             let dat = new Date();
             bonusObj.tempsDebut = dat.getSeconds() + 30;
             bonusObj.tempsActif = 1;
+            score = score - bonusObj.prix;
+            affichage.innerText = score;
            /*  bonusObj.tempsFin = bonusObj.tempsDebut + 30; */
             /* score= score *2; */
            /*  affichage.innerText = score; */
