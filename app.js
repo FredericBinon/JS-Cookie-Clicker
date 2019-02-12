@@ -25,14 +25,10 @@ window.onload = () => {
     let score = 0;
     let multiplicateur = 1;
     let boutonactive=false;
-<<<<<<< HEAD
     let besoin = 1;
     let autoclicRestants= 3;
     let autoclicUtilises=0;
     let button = document.getElementById("cookie");
-=======
-    let button = document.getElementById("clic");
->>>>>>> 82c4360bc4e22cbeb894cc69c76184808b9ddce8
     let affichage = document.getElementById("affichage");
     let multibutton = document.getElementById("multiplier");
     let autobutton = document.getElementsByName("autoclicker")[0];
@@ -98,9 +94,6 @@ window.onload = () => {
         if (autoclicRestants==0){
             document.getElementsByName("autoclicker")[0].className = "activated";
         }
-      }
-      else {
-              alert("erreur: Bin non gros malin, tu l'as deja activé");
       }
     }
 
