@@ -49,81 +49,16 @@ button:hover {
   width: 19vw;
   height: 173px;
   text-align: center;
+  color: red;
+  font-size: 0.9em;
+  font-family: 'Press Start 2P', cursive;
+  padding: 47px;
   }
   #msg p {
-    color: red;
     margin-top: 47px;
-    font-size: 0.9em;
     margin-left: 625px;
-    font-family: 'Press Start 2P', cursive;
     margin-left: 97px;
   }
-
-
-#msgautoclick {
-  display: none;
-  left: 793px;
-  top: 77px;
-  z-index: 9999;
-  width: 330px;
-  height: 180px;
-  background-image: url("images/bulle_mamy.png");
-  background-repeat: no-repeat;
-  background-size: 80%;
-  position: fixed;
-  left: 800px;
-  top: 58px;
-  background-blend-mode: saturation;
-  background-size: 100%;
-  position: absolute;
-  width: 19vw;
-  height: 173px;
-  text-align: center;
-  }
-  #msgautoclick p {
-    color: red;
-    margin-top: 47px;
-    font-size: 0.9em;
-    margin-left: 625px;
-    font-family: 'Press Start 2P', cursive;
-    margin-left: 97px;
-  }
-
-
-#msgbonus {
-  display: none;
-  left: 793px;
-  top: 77px;
-  z-index: 9999;
-  width: 330px;
-  height: 180px;
-  background-image: url("images/bulle_mamy.png");
-  background-repeat: no-repeat;
-  background-size: 80%;
-  position: fixed;
-  left: 800px;
-  top: 58px;
-  background-blend-mode: saturation;
-  background-size: 100%;
-  position: absolute;
-  width: 19vw;
-  height: 173px;
-  text-align: center;
-  }
-  #msgbonus p {
-    color: red;
-    margin-top: 47px;
-    font-size: 0.9em;
-    margin-left: 625px;
-    font-family: 'Press Start 2P', cursive;
-    margin-left: 97px;
-  }
-
-
-
-
-
-
 
 
 .center {
