@@ -173,26 +173,30 @@ box-shadow: 0px 0px 181px 5px rgb(80, 77, 243);
 }
 .left span {
   font-family: 'Press Start 2P', cursive;
-  font-size: 1em;
-  color: #353030;
+  font-size: 1.3em;
+  color: #000;
   padding-top: 20px;
 }
 
 .left p {
-  font-size: 0.7em;
+  font-size: 0.65em;
+  font-family: 'Press Start 2P', cursive;
+  color: white;
+}
+h3 {
+  color: rgb(190, 146, 176);
+  font-size: 0.65em;
   font-family: 'Press Start 2P', cursive;
 }
 
 .actions{
-    height: 25%;
+  height: 25%;
   margin: 5vh;
-  background-color: orange;
+  background-color:#203076;
   display:flex;
   flex-wrap: wrap;
   text-align: center;
-  -webkit-box-shadow: 0px 0px 347px -5px rgba(237,171,183,1);
--moz-box-shadow: 0px 0px 47px -5px rgba(237,171,183,1);
-box-shadow: 0px 0px 47px -5px rgba(237,171,183,1);
+  
 }
 
 .activated{
@@ -204,13 +208,15 @@ box-shadow: 0px 0px 47px -5px rgba(237,171,183,1);
 }
 
 .prix{
+  border-radius: 29px 0px 29px 0px;
   background-color: #353030;
   margin: 10%;
   padding: 10px;
   color: #fac780;
 }
 .compteur{
-  background-color:#dad7a6 ;
+  border-radius: 29px 0px 29px 0px;
+  background-color:#4d527d ;
   margin: 10%;
   padding: 10px;
   color:#353030;
@@ -241,10 +247,12 @@ box-shadow: 0px 0px 47px -5px rgba(237,171,183,1);
 }
 
 .right h2{
-  font-size: 2em;
+  background-color: #1e3877;
+  font-size: 2.1em;
   margin-bottom: 1em;
   font-family: 'Pacifico', cursive;
-  color:white;
+  color: #b665ba;
+  padding: 20px;
   }
   
 
@@ -410,6 +418,10 @@ box-shadow: 0px 0px 47px -5px rgba(237,171,183,1);
 
 
 button{
+  border: none;
   width:100%;
-  margin: 1vw;
+  margin-left: 60px;
+  margin-right: 60px;
+  height: 35px;
+  border-radius: 29px 0px 29px 0px;
 }
