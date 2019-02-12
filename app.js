@@ -28,7 +28,9 @@ window.onload = () => {
     let besoin = 1;
     let autoclicUtilises = 0;
     let autoclicRestants = 3;
-    let button = document.getElementById("clic");
+    let autoclicRestants= 3;
+    let autoclicUtilises=0;
+    let button = document.getElementById("cookie");
     let affichage = document.getElementById("affichage");
     let multibutton = document.getElementById("multiplier");
     let autobutton = document.getElementsByName("autoclicker")[0];
@@ -60,17 +62,24 @@ window.onload = () => {
       affichage.innerText = score;
     }
 
-
+    function error (text, selector) {
+        document.querySelector(selector).innerText = text;
+        document.querySelector(selector).style.display = "block";
+        setTimeout ( ()=> {
+            document.querySelector(selector).innerText = "";
+            document.querySelector(selector).style.display = "none";
+        }, 3000)
+    }
 
     function testautoclic(oldAutoclicRestants, oldBesoin, oldAutoclicUtilises){
       console.log(besoin, autoclicRestants, autoclicUtilises)
       if (autoclicRestants<1) {
         document.getElementsByName("autoclicker")[0].className = "activated";
-        alert("Bin non gros malin, t'as d'ja tout pris");
+        error("Bin non gros malin, t'as d'ja tout pris", "#msg");
       }
       else {
         if (score<besoin){
-            alert("Wesh ma gueule, il te faut plus de cookies pour ça");
+            error("Wesh ma gueule, il te faut plus de cookies pour ça", "#msg");
         }
         if (score >= besoin) {
           autoclicUtilises = oldAutoclicUtilises + 1;
@@ -104,11 +113,7 @@ window.onload = () => {
             compteur.innerText ="X" + multiplicator.nombre;
             affichage.innerText = score;
         } else {
-            document.getElementById("msg").style.display = "block";
-            setTimeout(function () {
-                document.getElementById("msg").style.display = "none";
-           }, 3000 );
-
+            error("You don't have enough cookies, still baking!!!", "#msg");
         }
     }
     function bonus () {
