@@ -70,7 +70,6 @@ window.onload = () => {
     }
 
     function testautoclic(oldAutoclicRestants, oldBesoin, oldAutoclicUtilises){
-      console.log(besoin, autoclicRestants, autoclicUtilises)
       if (autoclicRestants<1) {
         document.getElementsByName("autoclicker")[0].className = "activated";
         error("Bin non gros malin, t'as d'ja tout pris", "#msg");
@@ -80,16 +79,20 @@ window.onload = () => {
             error("Wesh ma gueule, il te faut plus de cookies pour ça", "#msg");
         }
         if (score >= besoin) {
+          oldAutoclicUtilises=autoclicUtilises;
+          oldAutoclicRestants=autoclicRestants;
           autoclicUtilises = oldAutoclicUtilises + 1;
           autoclicRestants = oldAutoclicRestants -1;
+          console.log(autoclicRestants , oldAutoclicRestants);
+          console.log(autoclicUtilises , oldAutoclicUtilises);
+          oldBesoin=besoin;
           score=score-oldBesoin;
           besoin=oldBesoin*10;
+          console.log(besoin);
           prixAutoclicker.innerText=besoin;
           affichage.innerText = score;
           setInterval(()=>clicauto(score),1000);
-          boutonactive=true;
-          document.getElementsByName("autoclicker")[0].className = "activated";
-          compteautoclicker.innerText = "0 Left";
+          compteautoclicker.innerText = autoclicRestants + " Left";
         }
         if (autoclicRestants==0){
             document.getElementsByName("autoclicker")[0].className = "activated";
