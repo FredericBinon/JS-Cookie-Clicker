@@ -15,7 +15,7 @@ window.onload = () => {
 
     let bonusObjet = {
         prix: 100,
-        tempsFin : 0,
+        tempsActif : 0,
         tempsDebut : 0,
         count : 0
 
@@ -25,9 +25,6 @@ window.onload = () => {
     let score = 0;
     let multiplicateur = 1;
     let boutonactive=false;
-    let besoin = 1;
-    let autoclicRestants= 3;
-    let autoclicUtilises=0;
     let button = document.getElementById("clic");
     let affichage = document.getElementById("affichage");
     let multibutton = document.getElementById("multiplier");
@@ -35,19 +32,29 @@ window.onload = () => {
     let prixaffichage = document.getElementsByClassName("prix")[0];
     let compteur = document.getElementsByClassName("compteur")[0];
     let compteautoclicker= document.getElementsByClassName("compteur")[1];
-    let prixAutoclicker = document.getElementsByClassName("prix")[1];
     let bouttonBonus = document.getElementById("bonus");
 
 
     function click(multiplicateur) {
+        let tempsFin = new Date().getSeconds();
+        console.log(multiplicateur);
+        let bonObj = bonusObjet ;
+        console.log("djed: " + tempsFin + "fggg" +  bonObj.tempsDebut);
+        if ( bonObj.tempsActif == 1 && tempsFin < bonObj.tempsDebut){
+            multiplicateur = multiplicateur * 2 ;
+            console.log("djed2: " + tempsFin);
+            console.log("mul: " + multiplicateur);
+
+        }
+
         for (var i= 1; i <= multiplicateur; i++) {
             score++;
         }
         affichage.innerText = score;
     }
 
-    function clicauto(oldScore, autoclicUtilises){
-      score=oldScore+autoclicUtilises;
+    function clicauto(oldScore){
+      score=oldScore+1;
       affichage.innerText = score;
     }
 
@@ -76,12 +83,17 @@ window.onload = () => {
           besoin=oldBesoin*10;
           prixAutoclicker.innerText=besoin;
           affichage.innerText = score;
-          setInterval(()=>clicauto(score, autoclicUtilises),1000);
-          compteautoclicker.innerText = autoclicRestants + " Left";
+          setInterval(()=>clicauto(score),1000);
+          boutonactive=true;
+          document.getElementsByName("autoclicker")[0].className = "activated";
+          compteautoclicker.innerText = "0 Left";
         }
         if (autoclicRestants==0){
             document.getElementsByName("autoclicker")[0].className = "activated";
         }
+      }
+      else {
+              alert("erreur: Bin non gros malin, tu l'as deja activé");
       }
     }
 
@@ -104,21 +116,24 @@ window.onload = () => {
     }
     function bonus () {
         let bonusObj = bonusObjet;
-        if (score >= bonusObj.prix && bonusObj.count === 0) {
+        if (score >= bonusObj.prix && bonusObj.count == 0) {
             let dat = new Date();
-            bonusObj.tempsDebut = dat.getSeconds();
-            bonusObj.tempsFin = bonusObj.tempsDebut + 30;
-            score= score *2;
+            bonusObj.tempsDebut = dat.getSeconds() + 30;
+            bonusObj.tempsActif = 1;
+            score = score - bonusObj.prix;
             affichage.innerText = score;
+           /*  bonusObj.tempsFin = bonusObj.tempsDebut + 30; */
+            /* score= score *2; */
+           /*  affichage.innerText = score; */
             ++bonusObj.count;
-        } else if (score >= bonusObj.prix && bonusObj.count !== 0){
+        }/*  else if (score >= bonusObj.prix && bonusObj.count !== 0){
             let n = new Date().getSeconds();
             if(n < bonusObj.tempsFin){
                 score= score *2;
-                affichage.innerText = score;
+
             }
 
-        }
+        } */
     }
 
 
@@ -132,7 +147,7 @@ window.onload = () => {
     autobutton.addEventListener("click", function(e){
         e.preventDefault();
 
-        testautoclic(autoclicRestants, besoin, autoclicUtilises);
+        testautoclic();
     })
 
 /* the multiplicateur element allows to increment the score */
@@ -140,15 +155,11 @@ window.onload = () => {
         e.preventDefault();
 
         //augmenterMultiplicateur();
-
         game();
     })
-
 /* the bonus element multiplied the score suring 30sec */
     bouttonBonus.addEventListener("click",function (e){
         e.preventDefault ();
         bonus();
     })
-
-
 }
