@@ -40,28 +40,25 @@ button:hover {
   z-index: 9999;
   width: 330px;
   height: 180px;
-  background-image: url("images/bulle_mamy.png");
+  background-image: url(images/bulle_mamy.png);
   background-repeat: no-repeat;
   background-size: 80%;
   position: fixed;
-  left: 800px;
-  top: 58px;
+  left: 797px;
+  top: 59px;
   background-blend-mode: saturation;
-  background-size: 100%;
+  background-size: 91%;
   position: absolute;
   width: 19vw;
   height: 173px;
-  text-align: center;
-  color: red;
+  text-align: right;
+  color: #1D2B64;
   font-size: 0.9em;
   font-family: 'Press Start 2P', cursive;
-  padding: 47px;
+  padding: 92px;
+  line-height: 20px;
   }
-  #msg p {
-    margin-top: 47px;
-    margin-left: 625px;
-    margin-left: 97px;
-  }
+  
 
 
 .center {
@@ -95,46 +92,46 @@ box-shadow: 0px 0px 181px 5px rgb(80, 77, 243);
 
 @-webkit-keyframes color-change {
   0% {
-    color: #202e72;
+    color: #d65c86;
 }
 50% {
-    color: #304d5b;
+    color: #0476af;
 }
 100% {
-    color: #1e3036;
+    color: #a972b9;
 }
 }
 @-moz-keyframes color-change {
   0% {
-    color: #202e72;
+    color: #d65c86;
 }
 50% {
-    color: #304d5b;
+    color: #0476af;
 }
 100% {
-    color: #1e3036;
+    color: #a972b9;
 }
 }
 @-ms-keyframes color-change {
   0% {
-    color: #202e72;
+    color: #d65c86;
 }
 50% {
-    color: #304d5b;
+    color: #0476af;
 }
 100% {
-    color: #1e3036;
+    color: #a972b9;
 }
 }
 @-o-keyframes color-change {
-   0% {
-    color: #202e72;
+  0% {
+    color: #d65c86;
 }
 50% {
-    color: #304d5b;
+    color: #0476af;
 }
 100% {
-    color: #1e3036;
+    color: #a972b9;
 }
 }
 @keyframes color-change {
@@ -142,10 +139,10 @@ box-shadow: 0px 0px 181px 5px rgb(80, 77, 243);
     color: #d65c86;
 }
 50% {
-    color: #304d5b;
+    color: #0476af;
 }
 100% {
-    color: #1e3036;
+    color: #a972b9;
 }
 
 }
