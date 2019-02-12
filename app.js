@@ -39,7 +39,7 @@ window.onload = () => {
         let tempsFin = new Date().getSeconds();
         console.log(multiplicateur);
         let bonObj = bonusObjet ;
-        console.log("djed: " + tempsFin + "fggg" +  bonObj.tempsDebut); 
+        console.log("djed: " + tempsFin + "fggg" +  bonObj.tempsDebut);
         if ( bonObj.tempsActif == 1 && tempsFin < bonObj.tempsDebut){
             multiplicateur = multiplicateur * 2 ;
             console.log("djed2: " + tempsFin);
@@ -53,7 +53,7 @@ window.onload = () => {
         affichage.innerText = score;
     }
 
-    function clicauto(oldScore){ 
+    function clicauto(oldScore){
       score=oldScore+1;
       affichage.innerText = score;
     }
@@ -127,7 +127,7 @@ window.onload = () => {
             let n = new Date().getSeconds();
             if(n < bonusObj.tempsFin){
                 score= score *2;
-                 
+
             }
 
         } */
@@ -144,7 +144,7 @@ window.onload = () => {
     autobutton.addEventListener("click", function(e){
         e.preventDefault();
 
-        testautoclic(boutonactive);
+        testautoclic();
     })
 
 /* the multiplicateur element allows to increment the score */
@@ -158,6 +158,5 @@ window.onload = () => {
     bouttonBonus.addEventListener("click",function (e){
         e.preventDefault ();
         bonus();
-    })    
+    })
 }
-
