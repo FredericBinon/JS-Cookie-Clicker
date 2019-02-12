@@ -28,8 +28,6 @@ window.onload = () => {
     let besoin = 1;
     let autoclicUtilises = 0;
     let autoclicRestants = 3;
-    let autoclicRestants= 3;
-    let autoclicUtilises=0;
     let button = document.getElementById("cookie");
     let affichage = document.getElementById("affichage");
     let multibutton = document.getElementById("multiplier");
