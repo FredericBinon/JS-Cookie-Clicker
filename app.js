@@ -15,7 +15,7 @@ window.onload = () => {
 
     let bonusObjet = {
         prix: 100,
-        tempsFin : 0,
+        tempsActif : 0,
         tempsDebut : 0,
         count : 0
 
@@ -25,40 +25,63 @@ window.onload = () => {
     let score = 0;
     let multiplicateur = 1;
     let boutonactive=false;
+<<<<<<< HEAD
     let besoin = 1;
     let autoclicRestants= 3;
     let autoclicUtilises=0;
     let button = document.getElementById("cookie");
+=======
+    let button = document.getElementById("clic");
+>>>>>>> 82c4360bc4e22cbeb894cc69c76184808b9ddce8
     let affichage = document.getElementById("affichage");
     let multibutton = document.getElementById("multiplier");
     let autobutton = document.getElementsByName("autoclicker")[0];
     let prixaffichage = document.getElementsByClassName("prix")[0];
     let compteur = document.getElementsByClassName("compteur")[0];
     let compteautoclicker= document.getElementsByClassName("compteur")[1];
-    let prixAutoclicker = document.getElementsByClassName("prix")[1];
     let bouttonBonus = document.getElementById("bonus");
 
 
     function click(multiplicateur) {
+        let tempsFin = new Date().getSeconds();
+        console.log(multiplicateur);
+        let bonObj = bonusObjet ;
+        console.log("djed: " + tempsFin + "fggg" +  bonObj.tempsDebut);
+        if ( bonObj.tempsActif == 1 && tempsFin < bonObj.tempsDebut){
+            multiplicateur = multiplicateur * 2 ;
+            console.log("djed2: " + tempsFin);
+            console.log("mul: " + multiplicateur);
+
+        }
+
         for (var i= 1; i <= multiplicateur; i++) {
             score++;
         }
         affichage.innerText = score;
     }
 
-    function clicauto(oldScore, autoclicUtilises){
-      score=oldScore+autoclicUtilises;
+    function clicauto(oldScore){
+      score=oldScore+1;
       affichage.innerText = score;
+    }
+
+    function error (text, selector) {
+        document.querySelector(selector).innerText = text;
+        document.querySelector(selector).style.display = "block";
+        setTimeout ( ()=> {
+            document.querySelector(selector).innerText = "";
+            document.querySelector(selector).style.display = "none";
+        }, 3000)
     }
 
     function testautoclic(oldAutoclicRestants, oldBesoin, oldAutoclicUtilises){
       if (autoclicRestants<1) {
         document.getElementsByName("autoclicker")[0].className = "activated";
-        alert("Bin non gros malin, t'as d'ja tout pris");
+        error("Bin non gros malin, t'as d'ja tout pris", "#msg");
       }
       else {
         if (score<besoin){
-            alert("Wesh ma gueule, il te faut plus de cookies pour ça");
+            error("Wesh ma gueule, il te faut plus de cookies pour ça", "#msg");
         }
         if (score >= oldBesoin) {
           autoclicUtilises = oldAutoclicUtilises + 1;
@@ -67,12 +90,17 @@ window.onload = () => {
           besoin=oldBesoin*10;
           prixAutoclicker.innerText=besoin;
           affichage.innerText = score;
-          setInterval(()=>clicauto(score, autoclicUtilises),1000);
-          compteautoclicker.innerText = autoclicRestants + " Left";
+          setInterval(()=>clicauto(score),1000);
+          boutonactive=true;
+          document.getElementsByName("autoclicker")[0].className = "activated";
+          compteautoclicker.innerText = "0 Left";
         }
         if (autoclicRestants==0){
             document.getElementsByName("autoclicker")[0].className = "activated";
         }
+      }
+      else {
+              alert("erreur: Bin non gros malin, tu l'as deja activé");
       }
     }
 
@@ -90,30 +118,29 @@ window.onload = () => {
             compteur.innerText ="X" + multiplicator.nombre;
             affichage.innerText = score;
         } else {
-            document.getElementById("msg").style.display = "block";
-            setTimeout(function () {
-                document.getElementById("msg").style.display = "none";
-           }, 3000 );
-
+            error("You don't have enough cookies, still baking!!!", "#msg");
         }
     }
     function bonus () {
         let bonusObj = bonusObjet;
-        if (score >= bonusObj.prix && bonusObj.count === 0) {
+        if (score >= bonusObj.prix && bonusObj.count == 0) {
             let dat = new Date();
-            bonusObj.tempsDebut = dat.getSeconds();
-            bonusObj.tempsFin = bonusObj.tempsDebut + 30;
-            score= score *2;
+            bonusObj.tempsDebut = dat.getSeconds() + 30;
+            bonusObj.tempsActif = 1;
+            score = score - bonusObj.prix;
             affichage.innerText = score;
+           /*  bonusObj.tempsFin = bonusObj.tempsDebut + 30; */
+            /* score= score *2; */
+           /*  affichage.innerText = score; */
             ++bonusObj.count;
-        } else if (score >= bonusObj.prix && bonusObj.count !== 0){
+        }/*  else if (score >= bonusObj.prix && bonusObj.count !== 0){
             let n = new Date().getSeconds();
             if(n < bonusObj.tempsFin){
                 score= score *2;
-                affichage.innerText = score;
+
             }
 
-        }
+        } */
     }
 
 
@@ -127,7 +154,7 @@ window.onload = () => {
     autobutton.addEventListener("click", function(e){
         e.preventDefault();
 
-        testautoclic(autoclicRestants, besoin, autoclicUtilises);
+        testautoclic();
     })
 
 /* the multiplicateur element allows to increment the score */
@@ -135,15 +162,11 @@ window.onload = () => {
         e.preventDefault();
 
         //augmenterMultiplicateur();
-
         game();
     })
-
 /* the bonus element multiplied the score suring 30sec */
     bouttonBonus.addEventListener("click",function (e){
         e.preventDefault ();
         bonus();
     })
-
-
 }
