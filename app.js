@@ -58,19 +58,31 @@ window.onload = () => {
       affichage.innerText = score;
     }
 
-    function testautoclic(boutonactive){
-      if (boutonactive == false) {
-        console.log(boutonactive);
-        if (score<10){
-            alert("erreur: Wesh ma gueule, il te faut plus de cookies pour ça");
+
+
+    function testautoclic(oldAutoclicRestants, oldBesoin, oldAutoclicUtilises){
+      if (autoclicRestants<1) {
+        document.getElementsByName("autoclicker")[0].className = "activated";
+        alert("Bin non gros malin, t'as d'ja tout pris");
+      }
+      else {
+        if (score<besoin){
+            alert("Wesh ma gueule, il te faut plus de cookies pour ça");
         }
-        if (score >= 10) {
-          score=score-10;
+        if (score >= oldBesoin) {
+          autoclicUtilises = oldAutoclicUtilises + 1;
+          autoclicRestants = oldAutoclicRestants -1;
+          score=score-oldBesoin;
+          besoin=oldBesoin*10;
+          prixAutoclicker.innerText=besoin;
           affichage.innerText = score;
           setInterval(()=>clicauto(score),1000);
           boutonactive=true;
           document.getElementsByName("autoclicker")[0].className = "activated";
           compteautoclicker.innerText = "0 Left";
+        }
+        if (autoclicRestants==0){
+            document.getElementsByName("autoclicker")[0].className = "activated";
         }
       }
       else {
@@ -140,16 +152,12 @@ window.onload = () => {
         e.preventDefault();
 
         //augmenterMultiplicateur();
-
         game();
     })
-
 /* the bonus element multiplied the score suring 30sec */
     bouttonBonus.addEventListener("click",function (e){
         e.preventDefault ();
         bonus();
-    })
-    
-     
+    })    
 }
 
