@@ -64,6 +64,9 @@ window.onload = () => {
         if (score<besoin){
             alert("Wesh ma gueule, il te faut plus de cookies pour ça");
         }
+        if (autoclicRestants==0){
+            document.getElementsByName("autoclicker")[0].className = "activated";
+        }
         if (score >= oldBesoin) {
           score=score-oldBesoin;
           besoin=oldBesoin*10;
@@ -104,13 +107,13 @@ window.onload = () => {
             bonusObj.tempsDebut = dat.getSeconds();
             bonusObj.tempsFin = bonusObj.tempsDebut + 30;
             score= score *2;
-            affichage.innerText = score; 
+            affichage.innerText = score;
             ++bonusObj.count;
         } else if (score >= bonusObj.prix && bonusObj.count !== 0){
             let n = new Date().getSeconds();
             if(n < bonusObj.tempsFin){
                 score= score *2;
-                affichage.innerText = score;  
+                affichage.innerText = score;
             }
 
         }
@@ -144,7 +147,6 @@ window.onload = () => {
         e.preventDefault ();
         bonus();
     })
-    
-     
-}
 
+
+}
