@@ -28,7 +28,7 @@ window.onload = () => {
     let besoin = 1;
     let autoclicRestants= 3;
     let autoclicUtilises=0;
-    let button = document.getElementById("clic");
+    let button = document.getElementById("cookie");
     let affichage = document.getElementById("affichage");
     let multibutton = document.getElementById("multiplier");
     let autobutton = document.getElementsByName("autoclicker")[0];

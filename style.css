@@ -25,10 +25,13 @@ button {
 
 button:hover {
   background: #1D2B64;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to bottom, #F8CDDA, rgb(184, 36, 97));  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to bottom, #F8CDDA, rgb(182, 38, 98)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: -webkit-linear-gradient(to bottom, #F8CDDA, rgb(58, 9, 29));  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #F8CDDA, rgb(58, 9, 29)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
+
+
+
 
 #msg {
   display: none;
@@ -235,12 +238,13 @@ box-shadow: 0px 0px 181px 5px rgb(80, 77, 243);
 }
 .left span {
   font-family: 'Press Start 2P', cursive;
-  font-size: 1.3em;
+  font-size: 1em;
   color: #353030;
   padding-top: 20px;
 }
 
 .left p {
+  font-size: 0.7em;
   font-family: 'Press Start 2P', cursive;
 }
 
@@ -265,10 +269,10 @@ box-shadow: 0px 0px 47px -5px rgba(237,171,183,1);
 }
 
 .prix{
-  background-color:#fac780;
+  background-color: #353030;
   margin: 10%;
   padding: 10px;
-  color: #353030;
+  color: #fac780;
 }
 .compteur{
   background-color:#dad7a6 ;
@@ -307,17 +311,20 @@ box-shadow: 0px 0px 47px -5px rgba(237,171,183,1);
   font-family: 'Pacifico', cursive;
   color:white;
   }
-
+  
 
 .affichage{
   margin-bottom: 15vh;
   height:10vh;
-  font-size: 5em;
-  color: aquamarine;
+  font-size: 4em;
+  background: -webkit-linear-gradient(#d3f70c, #f30594);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-family: 'Press Start 2P', cursive;
+  text-shadow: #F8CDDA;
 }
 
-.clic {
+/* .clic {
   margin-top: 5%;
   height:200px;
   width:30%px;
@@ -349,13 +356,121 @@ box-shadow: 0px 0px 47px -5px rgba(237,171,183,1);
 .clic:active {
    width: 98%;
 
+    } */
+
+    #cookie {
+    width: 59%;
+    max-width: 100%;
+    height: 227px;
+    background: radial-gradient(#5f2e09, #c5AE89);
+    border-radius: 100%;
+    margin: 73px;
+    position: relative;
+    transition: all 10s;
+    transition-timing-function: cubic-bezier(1, 1.13, -4.72, 2.38);
+    
+  } 
+
+  #cookie:hover {
+    transform: rotate(20080deg);
+    filter: hue-rotate(600deg);
+  
+  }
+  #cookie:active {
+    background: radial-gradient(#c5AE89,#5f2e09,#c5AE89 );
+  }
+  
+  #choco1 {
+      top: 30px;
+      left: 59px;
+      width: 11%;
+      max-width: 100%;
+      height: 24px;
+      background: #1e130c;
+      background: -webkit-linear-gradient(to left, #9a8478, #1e130c);
+      background: linear-gradient(to left, #957168, #1e130c);
+      border-radius: 100%;
+      position: absolute;
+  }
+  
+    
+    
+  
+  #choco2 {
+    top: 89px;
+    left: 83px;
+    width: 11%;
+    max-width: 100%;
+    height: 29px;
+    background: #38261C;
+    background: -webkit-linear-gradient(to right, #583a36, #38261C);
+    background: linear-gradient(to right, #583a36, #38261C);
+    border-radius: 100%;
+    position: absolute;
+  }
+    
+  
+  #choco3 {
+    top: 146px;
+      left: 40px;
+      width: 11%;
+      max-width: 100%;
+      height: 29px;
+      background: #38261C;
+      background: -webkit-linear-gradient(to right, #583a36, #38261C);
+      background: linear-gradient(to right, #885c56, #38261C);
+      border-radius: 100%;
+      position: absolute;
+    
+  }
+  #choco4 {
+    top: 137px;
+    left: 104px;
+    width: 11%;
+    max-width: 100%;
+    height: 27px;
+    background: #38261C;
+    background: -webkit-linear-gradient(to right, #583a36, #38261C);
+    background: linear-gradient(to right, #583a36, #38261C);
+    border-radius: 100%;
+    position: absolute;
+  
+    
+  }
+  #choco5 {
+    top: 71px;
+    left: 181px;
+    width: 8%;
+    max-width: 100%;
+    height: 20px;
+    background: #1e130c;
+    background: -webkit-linear-gradient(to left, #9a8478, #1e130c);
+    background: linear-gradient(to left, #8d6960, #1e130c);
+    border-radius: 100%;
+    position: absolute;
+    
+  }
+  #choco6 {
+      top: 154px;
+      left: 158px;
+      width: 11%;
+      max-width: 100%;
+      height: 26px;
+      background: #1e130c;
+      background: -webkit-linear-gradient(to left, #9a8478, #1e130c);
+      background: linear-gradient(to left, #73544d, #1e130c);
+      border-radius: 100%;
+      position: absolute;
+    
+  }
+  
+  
+  
+  
 
 
 
 
-
-
-}
 
 
 
