@@ -52,29 +52,26 @@ window.onload = () => {
     }
 
     function testautoclic(oldAutoclicRestants, oldBesoin, oldAutoclicUtilises){
-      console.log('click')
       if (autoclicRestants<1) {
         document.getElementsByName("autoclicker")[0].className = "activated";
         alert("Bin non gros malin, t'as d'ja tout pris");
       }
       else {
-        autoclicUtilises = oldAutoclicUtilises + 1;
-        autoclicRestants = oldAutoclicRestants -1;
-        console.log(autoclicUtilises);
         if (score<besoin){
             alert("Wesh ma gueule, il te faut plus de cookies pour ça");
         }
-        if (autoclicRestants==0){
-            document.getElementsByName("autoclicker")[0].className = "activated";
-        }
         if (score >= oldBesoin) {
+          autoclicUtilises = oldAutoclicUtilises + 1;
+          autoclicRestants = oldAutoclicRestants -1;
           score=score-oldBesoin;
           besoin=oldBesoin*10;
-          console.log(besoin);
           prixAutoclicker.innerText=besoin;
           affichage.innerText = score;
           setInterval(()=>clicauto(score, autoclicUtilises),1000);
           compteautoclicker.innerText = autoclicRestants + " Left";
+        }
+        if (autoclicRestants==0){
+            document.getElementsByName("autoclicker")[0].className = "activated";
         }
       }
     }
