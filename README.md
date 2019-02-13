@@ -1,9 +1,16 @@
 # JS-Cookie-Clicker
 
 Create in group a "Cookie Clicker" application based on JaveScript.
-Exemple of [Cookie Clicker](http://orteil.dashnet.org/cookieclicker/) application.
 
 From the 06 Feb 2019 to 13 Feb 2019.
+
+Exemple of [Cookie Clicker](http://orteil.dashnet.org/cookieclicker/) application.
+
+Work visual preview:
+<img src="/home/user/Desktop/Becode_Projets/JS/JS-Cookie-Clicker/images" class="final visual"/>
+
+Final work online:
+[Grany Clicker](file:///home/user/Desktop/Becode_Projets/JS/JS-Cookie-Clicker/index.html)
 
 
 ## Build with
