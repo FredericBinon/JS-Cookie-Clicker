@@ -103,9 +103,7 @@ From  06 Feb 2019 to 13 Feb 2019.
 ## Timeline / Workflow
 ### Wendesday 06/02
 - Visualization of video SRCUM.
-- Creation of GitHub's Repos:
-* Master
-* Development
+- Creation of GitHub's Repos and branches.
 - Calendar's preparation.
 - Amalia and Arnaud start the "clic" and the "score" code on .js. 
 - Frederic and Andres initialisation of design on .css and html.
