@@ -4,14 +4,14 @@ JS-Cookie-Clicker is a teamwork project application based on JavaScript develope
 
 Here is an example of [Cookie Clicker](http://orteil.dashnet.org/cookieclicker/) application.
 
-##Timetable:
+## Timetable:
 
 From  06 Feb 2019 to 13 Feb 2019.
 
-##Final work online:
+## Final work online:
 [Grany Click](https://fredericbinon.github.io/JS-Cookie-Clicker/)
 
-##Work visual preview:
+## Work visual preview:
 <img src="https://github.com/FredericBinon/JS-Cookie-Clicker/blob/development/images/final%20visual.png" class="final visual"/>
 
 ## Co-workers
