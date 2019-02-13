@@ -8,7 +8,7 @@ Here is an example of [Cookie Clicker](http://orteil.dashnet.org/cookieclicker/)
 
 From  06 Feb 2019 to 13 Feb 2019.
 
-Final work online:
+**Final work online:**
 [Grany Click](https://fredericbinon.github.io/JS-Cookie-Clicker/)
 
 **Work visual preview:**
@@ -18,6 +18,8 @@ Final work online:
 
 
 ## Co-workers
+
+5 learners from BeCode program. Start with almost no code knowledge 5 weeks ago. 
 
 * [AMAN Djedou Arnaud](https://github.com/djedou) 
 * [BAQUET Mathilde](https://github.com/MathildeBa)
@@ -100,39 +102,39 @@ Final work online:
 
 ## Timeline / Workflow
 ### Wendesday 06/02
-- Visualization of video SRCUM
-- Creation of GitHub's Repos 
+- Visualization of video SRCUM.
+- Creation of GitHub's Repos:
 * Master
-* Development 
- **design
- **JS Clic/Score
-- Calendar's preparation
-- Amalia & Arnaud start the "clic" and the "score" code on .js. 
-- Frederic et Andres initialisation of design on .css and html.
+* Development
+- Calendar's preparation.
+- Amalia and Arnaud start the "clic" and the "score" code on .js. 
+- Frederic and Andres initialisation of design on .css and html.
 
 ### Thursday 07/02
 - GitHub's branches organisation and remediation.
-- Amalia et Arnaud *multiplicator* botton function .js. (price and nombers).
-- Mathilde et Andres design amelioratiion .html and .css
+- Amalia and Arnaud *multiplicator* botton function .js. (price and nombers).
+- Mathilde and Andres design amelioratiion .html and .css.
 - Frerderic: code prevew on paper (UML). 
 
 ### Friday 08/02
-- Arnaud, Amalia et Frederic conflicts resolution between bouttons *multiplicator* & *autoclicker*.
+- Arnaud, Amalia and Frederic conflicts resolution between bouttons *multiplicator* & *autoclicker*.
 - Mathilde : starting code of *bonus* button .js.
 - Andres: keep going on design .CSS .SVG.
 
 ### Monday 11/02
-- Amalia et Frederic display of error speach balloon.
+- Amalia and Frederic display of error speach balloon.
 - Andres keep going on design : text style and button animation.
 - Frederic conflict resolution GitHub.
-- Arnaud et Mathilde start the bonus algorithm .js.
+- Arnaud and Mathilde start the bonus algorithm .js.
 
 ### Tuesday 12/02
-- Andres et Amalia visual charter correction .CSS
-- Amalia et Frederic works on speach ballon alteration.
-- Arnaud et Mathilde almost finish the bonus botton. And start the *countdown* code on .js.
+- Andres and Amalia visual charter correction .CSS
+- Amalia and Frederic works on speach ballon alteration.
+- Arnaud and Mathilde almost finish the bonus botton. And start the *countdown* code on .js.
 - Frederic finish the *autoclick* botton.
 
 ### Wendesday 13/02
--Testing the game
--Merging the *developpment* branch on the *master*.
+- Correcting last bugs.
+- Testing the game.
+- Merging the *developpment* branch on the *master*.
+- Celebrating our firt commun project.
