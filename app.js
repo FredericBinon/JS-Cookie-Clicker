@@ -19,10 +19,10 @@ window.onload = () => {
     let score = 0;
     let multiplicateur = 1;
     let boutonactive=false;
-    let besoin = 1;
+    let besoin = 500;
     let autoclicUtilises = 0;
-    let autoclicRestants = 3;
-    let priceBonus = 20;
+    let autoclicRestants = 10;
+    let priceBonus = 5000;
     let timer = 30;
     let bonusActif=false;
     let button = document.getElementById("cookie");
@@ -104,7 +104,7 @@ window.onload = () => {
 
     function bonus (priceBonus, oldScore, timer, oldMultiplicateur) {
       if (score<priceBonus){
-        error("Duuuuuude, just keep on clicking!", "#msg");
+        error("Duuuuuuuuude! \n Come on.. Just keep on clicking!", "#msg");
       } else {
         if (bonusActif==false){
           score= oldScore - priceBonus;
