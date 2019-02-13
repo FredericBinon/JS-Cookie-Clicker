@@ -7,7 +7,7 @@ From the 06 Feb 2019 to 13 Feb 2019.
 Exemple of [Cookie Clicker](http://orteil.dashnet.org/cookieclicker/) application.
 
 Work visual preview:
-<img src="/home/user/Desktop/Becode_Projets/JS/JS-Cookie-Clicker/images" class="final visual"/>
+<img src="https://github.com/FredericBinon/JS-Cookie-Clicker/blob/development/images/final%20visual.png" class="final visual"/>
 
 Final work online:
 [Grany Clicker](file:///home/user/Desktop/Becode_Projets/JS/JS-Cookie-Clicker/index.html)
