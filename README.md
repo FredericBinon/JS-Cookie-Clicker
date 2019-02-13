@@ -1,8 +1,9 @@
 # JS-Cookie-Clicker
 
-Create in group a cookie clicker application based on Js.
+Create in group a "Cookie Clicker" application based on Js.
+Exemple of [Cookie Clicker](http://orteil.dashnet.org/cookieclicker/) application.
 
-06 - .. Feb 2019
+From the 06 Feb 2019 to 13 Feb 2019.
 
 
 ## Build with
@@ -35,15 +36,16 @@ Create in group a cookie clicker application based on Js.
 ## Objectives
 
 ## Insctruction:
+*Here are the instrcutions gave by the Coaches from BeCode formation to make the application.* 
 
-### Étape 1 : _structure de base_
-Faire une structure de base *HTML* / *CSS* / *JS*. Dans le HTML, mettre un bouton avec un identifiant « clic » et une `div` avec un identifiant `affichage`, dont la valeur initiale sera `0`. 
+>### Étape 1 : _structure de base_
+>Faire une structure de base *HTML* / *CSS* / *JS*. Dans le HTML, mettre un bouton avec un identifiant « clic » et une `div` >avec un identifiant `affichage`, dont la valeur initiale sera `0`. 
 
-### Étape 2 : _préparer le JS_
-Préparez les variables en tête du *JS* qui nous permettront de manipuler notre bouton et notre `div`. Nous aurons également besoin d'une variable `score` que nous initialiserons à `0`.
+>### Étape 2 : _préparer le JS_
+>Préparez les variables en tête du *JS* qui nous permettront de manipuler notre bouton et notre `div`. Nous aurons également >besoin d'une variable `score` que nous initialiserons à `0`.
 
-### Étape 3 : _augmenter le score_
-Quand on clique sur le bouton, faire augmenter la variable `score` de `1`, puis afficher ce score dans la `div` affichage.
+>### Étape 3 : _augmenter le score_
+>Quand on clique sur le bouton, faire augmenter la variable `score` de `1`, puis afficher ce score dans la `div` affichage.
 
 ### Étape 4 : _préparation du multiplicateur_
 Ajouter un bouton dont l'identifiant est `multiplier`. Créer un compteur de clics (dont la variable s'appellera `multiplicateur` et sera initialisée à `1`) sur ce bouton. La fonction associée au clic du multiplicateur s'appellera `augmenterMultiplicateur`.
