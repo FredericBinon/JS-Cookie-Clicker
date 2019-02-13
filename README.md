@@ -12,7 +12,7 @@ From the 06 Feb 2019 to 13 Feb 2019.
 * [BAQUET Mathilde](https://github.com/MathildeBa)
 * [BINON Frédéric](https://github.com/FredericBinon) 
 * [GOLDESTEIN Andrés](https://github.com/AndresGol) 
-* [RODRIGEZ Amalia](https://github.com/AmaliaRVM) 
+* [RODRIGUEZ Amalia](https://github.com/AmaliaRVM) 
 
  
 
