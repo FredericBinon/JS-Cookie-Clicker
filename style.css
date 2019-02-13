@@ -2,7 +2,12 @@
  
 
 body{
-  margin: 0px;
+  padding: 0px;
+ margin: 0px;
+ min-width: 1024px;
+ text-align: center;
+ overflow: hidden;
+  
 }
 
 main{
@@ -46,7 +51,7 @@ button:hover {
   background-repeat: no-repeat;
   background-size: 80%;
   position: fixed;
-  left: 817px;
+  left: 1000px;
   top: 69px;
   background-blend-mode: saturation;
   background-size: 91%;
