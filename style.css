@@ -100,7 +100,8 @@ button{
   transition: 2s;
 }
 button:hover {
-  border:none!important;
+  
+  border:none;
   border-radius: 50% 50%;
   /* fallback for old browsers */
   background: #1D2B64;
