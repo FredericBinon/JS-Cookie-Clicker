@@ -46,14 +46,10 @@ window.onload = () => {
             score = score - multiplicator.prix;
             multiplicator.calprix();
             multiplicator.augmenterMultiplicateur();
-
             multiplicateur = multiplicator.multiplicateur;
             if  (bonusActif==true){
               multiplicateur = multiplicateur*2;
-              console.log(bonusActif);
             }
-            console.log (multiplicateur);
-
             prixaffichage.innerText = multiplicator.prix;
             compteur.innerText ="X" + multiplicator.nombre;
             affichage.innerText = score;
@@ -111,8 +107,6 @@ window.onload = () => {
           affichage.innerText = score;
           multiplicateur = oldMultiplicateur*2;
           bonusActif=true;
-          console.log(bonusActif + " bonus");
-          console.log(multiplicateur + " bonus");
           var interval = setInterval(function(){
             timer--;
             document.getElementsByName("bonus")[0].className = "activated";
@@ -123,9 +117,7 @@ window.onload = () => {
               multiplicateur = multiplicateur/2;
               timer = 30;
               document.getElementsByName("bonus")[0].className = "bonus";
-              console.log(multiplicateur + " fin");
               bonusActif = false;
-              console.log(bonusActif + " fin");
             }
           }, 1000);
         } else{
