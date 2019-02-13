@@ -5,23 +5,22 @@ Create in group a cookie clicker application based on Js.
 06 - .. Feb 2019
 
 
-## Collaborators
+## Build with
 
-AmaliaRVM
- 
-Andrés Goldestein
-  *AndresGol*
- 
-Mathilde
-  *MathildeBa*
- 
-djedou
+[BINON Frédéric](https://github.com/FredericBinon)
+[DJEDOU Arnaud](https://github.com/djedou)
+[RODRIGEZ Amalia](https://github.com/AmaliaRVM)
+[GOLDESTEIN Andrés](https://github.com/AndresGol)
+[BAQUET Mathilde](https://github.com/MathildeBa)
 
-## Used
+## Acknowledgments
 
-- Html
-- Css
-- JS
+* SCRUM
+* .html
+* .css
+* .js
+* .svg
+* GitHub
 
 ## Skills
 
@@ -85,15 +84,15 @@ Que ce soit beau ! Pas d'images !
 
 ## Calendrier
 ### mercredi 06/02
-- visualisation de la video SRCUM
+- Visualisation de la video SRCUM
 - creation d'un Repos GitHub
 * Master
 * Development 
  ** design
  ** JS Clic/Score
-- préparation du calandrier
+- préparation du calendrier
 - Amalia et Arnaud débute le code en JS pour lier le "clic" au "Score"
-- Frederic et Andres créent le design de base HTML et CSS visualisation des boutons. 
+- Frederic et Andres créer le design de base HTML et CSS visualisation des boutons. 
 
 ### jeudi 07/02
 - mise en place du programme de la journée
@@ -102,8 +101,20 @@ Que ce soit beau ! Pas d'images !
 - Mathilde et Andres: application du design en .html et .css
 - Frerderic: previsualisation du code sur papier en francais du futur code. (UML)
 
-### Vendredi 08/02
-- resolution des conflits entre le bouton "multiplicateur"&"autoclicker" Arnaud, Amalia et Frederic
-- debut du codage pour le bouton "bonus" Mathilde
-- amélioration du design .CSS .PVG Andres
+### vendredi 08/02
+-  Arnaud, Amalia et Frederic : resolution des conflits entre le bouton "multiplicateur"&"autoclicker"
+- Mathilde : debut du codage pour le bouton "bonus" 
+- Andres: avancement sur le design en .CSS .SVG 
+
+### lundi 11/02
+- Amalia et Frederic affichage visuel des bulles pour les messages d'erreur.
+- Andres avancement du style de texte et animations des boutons
+- Frederic resolution des conflits .JS 
+- Arnaud et Mathilde 
+
+### mardi 12/02
+- Andres et Amalia corrige la charte du visuel .CSS
+- Amalia et Frederic  changement de l'affichage visuel des bulles pour les messages d'erreur.
+- Arnaud et Mathilde avancement sur le bouton Bonus et du compte a rebours Bonus
+- Frederic finalisation de l'autoclick.   
 
