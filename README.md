@@ -1,6 +1,6 @@
 # JS-Cookie-Clicker
 
-JS-Cookie-Clicker is an application based on JavaScript developed within the BeCode training.  
+JS-Cookie-Clicker is a teamwork project application based on JavaScript developed within the BeCode training.  
 
 Here is an example of [Cookie Clicker](http://orteil.dashnet.org/cookieclicker/) application.
 
@@ -9,7 +9,7 @@ Here is an example of [Cookie Clicker](http://orteil.dashnet.org/cookieclicker/)
 From  06 Feb 2019 to 13 Feb 2019.
 
 
-Work visual preview:
+**Work visual preview:**
 <img src="https://github.com/FredericBinon/JS-Cookie-Clicker/blob/development/images/final%20visual.png" class="final visual"/>
 
 Final work online:
@@ -46,7 +46,7 @@ Final work online:
 ## Objectives
 
 ## Insctruction:
-*Here are the instrcutions gave by the Coaches from BeCode formation to make the application.* 
+*Above you will find the instructions gave by the BeCode coachs for the development of the JS-Cookie-Clicker application* 
 
 > Étape 1 : _structure de base_
 >Faire une structure de base *HTML* / *CSS* / *JS*. Dans le HTML, mettre un bouton avec un identifiant « clic » et une `div` >avec un identifiant `affichage`, dont la valeur initiale sera `0`. 
