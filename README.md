@@ -8,9 +8,9 @@ From the 06 Feb 2019 to 13 Feb 2019.
 
 ## Build with
 
+* [AMAN Djedou Arnaud](https://github.com/djedou) 
 * [BAQUET Mathilde](https://github.com/MathildeBa)
 * [BINON Frédéric](https://github.com/FredericBinon) 
-* [DJEDOU Arnaud](https://github.com/djedou) 
 * [GOLDESTEIN Andrés](https://github.com/AndresGol) 
 * [RODRIGEZ Amalia](https://github.com/AmaliaRVM) 
 
