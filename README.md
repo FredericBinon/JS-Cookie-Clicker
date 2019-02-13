@@ -94,8 +94,8 @@ Final work online:
 -----------------
 
 
-## Timeline / 
-### mercredi 06/02
+## Timeline / Framework
+### Wendesday 06/02
 - Visualization of video SRCUM
 - Creation of GitHub's Repos 
 * Master
@@ -106,29 +106,29 @@ Final work online:
 - Amalia & Arnaud start the "clic" and the "score" code on .js. 
 - Frederic et Andres initialisation of design on .css and html.
 
-### jeudi 07/02
+### Thursday 07/02
 - GitHub's branches organisation and remediation.
 - Amalia et Arnaud *multiplicator* botton function .js. (price and nombers).
 - Mathilde et Andres design amelioratiion .html and .css
 - Frerderic: code prevew on paper (UML). 
 
-### vendredi 08/02
+### Friday 08/02
 - Arnaud, Amalia et Frederic conflicts resolution between bouttons *multiplicator* & *autoclicker*.
 - Mathilde : starting code of *bonus* button .js.
 - Andres: keep going on design .CSS .SVG.
 
-### lundi 11/02
+### Monday 11/02
 - Amalia et Frederic display of error speach balloon.
 - Andres keep going on design : text style and button animation.
 - Frederic conflict resolution GitHub.
 - Arnaud et Mathilde start the bonus algorithm .js.
 
-### mardi 12/02
+### Tuesday 12/02
 - Andres et Amalia visual charter correction .CSS
 - Amalia et Frederic works on speach ballon alteration.
 - Arnaud et Mathilde almost finish the bonus botton. And start the *countdown* code on .js.
 - Frederic finish the *autoclick* botton.
 
-### mercredi 13/02
+### Wendesday 13/02
 -Testing the game
 -Merging the *developpment* branch on the *master*.
