@@ -11,8 +11,8 @@ body{
 }
 
 main{
-  width:96%;
-  height:93vh;
+  width:96vw;
+  height:92vh;
   display:flex;
   margin:0%;
   padding: 0;
@@ -21,7 +21,6 @@ main{
   border-width: 2em;
   border-color:#40369d;
   border-radius: 0%;
-
 }
 
 
