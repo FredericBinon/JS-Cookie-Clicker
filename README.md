@@ -94,7 +94,7 @@ Final work online:
 -----------------
 
 
-## Calendrier
+## Timeline / 
 ### mercredi 06/02
 - Visualization of video SRCUM
 - Creation of GitHub's Repos 
