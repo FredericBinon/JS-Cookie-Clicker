@@ -1,6 +1,6 @@
 # JS-Cookie-Clicker
 
-Create in group a "Cookie Clicker" application based on Js.
+Create in group a "Cookie Clicker" application based on JaveScript.
 Exemple of [Cookie Clicker](http://orteil.dashnet.org/cookieclicker/) application.
 
 From the 06 Feb 2019 to 13 Feb 2019.
