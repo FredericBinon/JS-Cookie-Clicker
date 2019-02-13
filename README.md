@@ -133,4 +133,7 @@ From  06 Feb 2019 to 13 Feb 2019.
 - Correcting last bugs.
 - Testing the game.
 - Merging the *developpment* branch on the *master*.
-- Celebrating our firt commun project.
+- Celebrating our first commun project.  
+
+## What we learn...  
+During the process of this project we faced differents problems regarding the framework, the method as well as the organisation. We finally came up with new proposals that allow us to stablish a good workflow. Lead by our Scrum master, Mathilde, we ended up working in pairs each of the tasks related with javascript and css. 
