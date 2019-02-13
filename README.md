@@ -1,6 +1,6 @@
 # JS-Cookie-Clicker
 
-Create in group a "Cookie Clicker" application based on JaveScript.
+Create in group a "Cookie Clicker" application based on JavaScript.
 
 From the 06 Feb 2019 to 13 Feb 2019.
 
@@ -10,7 +10,7 @@ Work visual preview:
 <img src="https://github.com/FredericBinon/JS-Cookie-Clicker/blob/development/images/final%20visual.png" class="final visual"/>
 
 Final work online:
-[Grany Clicker](file:///home/user/Desktop/Becode_Projets/JS/JS-Cookie-Clicker/index.html)
+[Grany Click](file:///home/user/Desktop/Becode_Projets/JS/JS-Cookie-Clicker/index.html)
 
 
 ## Build with
@@ -94,7 +94,7 @@ Final work online:
 -----------------
 
 
-## Timeline / Framework
+## Timeline / Workflow
 ### Wendesday 06/02
 - Visualization of video SRCUM
 - Creation of GitHub's Repos 
