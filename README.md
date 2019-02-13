@@ -1,6 +1,7 @@
 # JS-Cookie-Clicker
 
-Create in group a "Cookie Clicker" application based on JavaScript.
+JS-Cookie-Clicker is an application based on JavaScript developed in within the BeCode training.
+
 
 From the 06 Feb 2019 to 13 Feb 2019.
 
