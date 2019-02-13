@@ -1,6 +1,6 @@
 
-window.onload = () => 
-{
+window.onload = () => {
+
     let multiObjet = {
         prix: 50,
         nombre:1,
@@ -14,19 +14,15 @@ window.onload = () =>
         }
     }
 
-    let bonusObjet = {
-        prix: 100,
-        tempsActif : 0,
-        tempsDebut : 0,
-        count : 0
-    }
-
-
     let score = 0;
     let multiplicateur = 1;
+    let boutonactive=false;
     let besoin = 1;
     let autoclicUtilises = 0;
     let autoclicRestants = 3;
+    let priceBonus = 20;
+    let timer = 30;
+    let bonusActif=false;
     let button = document.getElementById("cookie");
     let affichage = document.getElementById("affichage");
     let multibutton = document.getElementById("multiplier");
@@ -35,21 +31,15 @@ window.onload = () =>
     let prixAutoclicker= document.getElementsByClassName("prix")[1];
     let compteur = document.getElementsByClassName("compteur")[0];
     let compteautoclicker= document.getElementsByClassName("compteur")[1];
-    //let countdown=document.getElementById("compteur")[2];
-    let bouttonBonus = document.getElementById("bonus");
+    let timeLeft = document.getElementsByClassName("compteur")[2];
+    let bouttonBonus = document.getElementsByClassName("bonus")[0];
+
 
 
     function click(multiplicateur) {
-        let tempsFin = new Date().getSeconds();
-        let bonObj = bonusObjet ;
-            if ( bonObj.tempsActif == 1 && tempsFin < bonObj.tempsDebut){
-                multiplicateur = multiplicateur * 2 ;
-                console.log("djed2: " + tempsFin);
-                console.log("mul: " + multiplicateur);
-            }
-        for (var i= 1; i <= multiplicateur; i++) {
-            score++;
-        }
+      for (var i= 1; i <= multiplicateur; i++) {
+        score++;
+      }
         affichage.innerText = score;
     }
 
@@ -70,23 +60,20 @@ window.onload = () =>
     function testautoclic(oldAutoclicRestants, oldBesoin, oldAutoclicUtilises){
       if (autoclicRestants<1) {
         document.getElementsByName("autoclicker")[0].className = "activated";
-        error("Don't cheat!!! \n No autoclickers\n left.", "#msg");
+        error("Bin non gros malin, t'as d'ja tout pris", "#msg");
       }
       else {
         if (score<besoin){
-            error("Hey bro! You need more cookies for that.", "#msg");
+            error("Wesh ma gueule, il te faut plus de cookies pour ça", "#msg");
         }
         if (score >= besoin) {
           oldAutoclicUtilises=autoclicUtilises;
           oldAutoclicRestants=autoclicRestants;
           autoclicUtilises = oldAutoclicUtilises + 1;
           autoclicRestants = oldAutoclicRestants -1;
-          console.log(autoclicRestants , oldAutoclicRestants);
-          console.log(autoclicUtilises , oldAutoclicUtilises);
           oldBesoin=besoin;
           score=score-oldBesoin;
           besoin=oldBesoin*10;
-          console.log(besoin);
           prixAutoclicker.innerText=besoin;
           affichage.innerText = score;
           setInterval(()=>clicauto(score),1000);
@@ -107,6 +94,11 @@ window.onload = () =>
             multiplicator.augmenterMultiplicateur();
 
             multiplicateur = multiplicator.multiplicateur;
+            if  (bonusActif==true){
+              multiplicateur = multiplicateur*2;
+              console.log(bonusActif);
+            }
+            console.log (multiplicateur);
 
             prixaffichage.innerText = multiplicator.prix;
             compteur.innerText ="X" + multiplicator.nombre;
@@ -115,18 +107,35 @@ window.onload = () =>
             error("You don't have enough cookies, still baking!!!", "#msg");
         }
     }
-    function bonus () {
-        let bonusObj = bonusObjet;
-        if (score >= bonusObj.prix && bonusObj.count == 0) {
-            let dat = new Date();
-            bonusObj.tempsDebut = dat.getSeconds();
-            bonusObj.tempsActif = 1;
-            score = score - bonusObj.prix;
-            affichage.innerText = score;
-            ++bonusObj.count;
+    function bonus (priceBonus, oldScore, timer, oldMultiplicateur) {
+      if (score<priceBonus){
+        error("You don't have enough cookies, still baking!!!", "#msg");
+      } else {
+        if (timer == 30){
+          score= oldScore - priceBonus;
+          affichage.innerText = score;
+          multiplicateur = oldMultiplicateur*2;
+          bonusActif=true;
+          console.log(bonusActif + " bonus");
+          console.log(multiplicateur + " bonus");
+          var interval = setInterval(function(){
+            timer--;
+            document.getElementsByName("bonus")[0].className = "activated";
+            timeLeft.innerText= timer + "sec";
+            if (timer == 0){
+              clearInterval(interval);
+              timeLeft.innerText= "Available"
+              multiplicateur = multiplicateur/2;
+              timer = 30;
+              document.getElementsByName("bonus")[0].className = "bonus";
+              console.log(multiplicateur + " fin");
+              bonusActif = false;
+              console.log(bonusActif + " fin");
+            }
+          }, 1000);
         }
+      }
     }
-
 
 
 /* the button element allows to modifie the score*/
@@ -148,47 +157,9 @@ window.onload = () =>
         //augmenterMultiplicateur();
         game();
     })
-/* the bonus element multiplied the score suring 30sec */
+/* the bonus element multiplied the score during 30sec */
     bouttonBonus.addEventListener("click",function (e){
         e.preventDefault ();
-        let n = 0;
-        let bonusObj = bonusObjet;
-        if(n != 0){
-            setTimeout(() => {
-                bonusObj.tempsActif = 0; 
-            }, 30000)
-           
-        }
-        n++;
-        bonus();
+        bonus(priceBonus, score, timer, multiplicateur);
     })
 }
-
-// //Countdown Bonus
-//     var decompte = function(i){
-//         countdown.innerHTML=i+"s";
-//     }
-//     var affichage=function(){
-//         countdown.innerHTML="Ready";
-//     }
-//     var temps=0;
-//     var decrement = function(){
-//         // i represente le nombre de seconde pour le decompte 
-//         for(var i = 30; i=0;i--){
-//             setTimeout(function(s){
-//                 return function(){
-//                     //fonction d'affichage du decompte
-//                     decompte(s);
-//                 }
-//             })(i),temps;
-//             temps+-1000;
-
-//         }
-//     }
-//     // appel de la fonction
-//     decrement();
-//         //apres le decompte affichage du meggase de fin
-//     setTimeout(affichage,temps-1000);
-
-
-
