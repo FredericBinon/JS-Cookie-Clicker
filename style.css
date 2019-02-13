@@ -47,13 +47,14 @@ h3 {
   font-family: 'Press Start 2P', cursive;
 }
 .actions{
-  margin-top: 47px!important;
+  margin-top: 25px;
+  margin-left: 5vh;
+  margin-right: 5vh;
   height: auto;
-  margin: 5vh;
   background-color:#203076;
   display:flex;
   flex-wrap: wrap;
-  text-align: center;  
+  text-align: center;
 }
 .activated{
   background: grey;
@@ -78,7 +79,7 @@ h3 {
 .prixMulti, .nombreMulti, .prixAutoclicker,
 .nombreAutoclicker, .prixBonus, .tempsRestant{
   width:50%;
-  padding-top: 7%;
+  padding-top: 3%;
 }
 button{
   margin-bottom: 30px;
@@ -91,30 +92,30 @@ button{
   margin-top: 10px;
   border: none;
   /* fallback for old browsers */
-  background: #1D2B64;  
+  background: #1D2B64;
   /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-linear-gradient(to top, #F8CDDA, #d65c86); 
+  background: -webkit-linear-gradient(to top, #F8CDDA, #d65c86);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  background: linear-gradient(to top, #F8CDDA, #d65c86); 
+  background: linear-gradient(to top, #F8CDDA, #d65c86);
   transition: 2s;
 }
 button:hover {
   border-radius: 50% 50%;
   /* fallback for old browsers */
-  background: #1D2B64;  
+  background: #1D2B64;
   /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-linear-gradient(to bottom, #F8CDDA, rgb(58, 9, 29));  
+  background: -webkit-linear-gradient(to bottom, #F8CDDA, rgb(58, 9, 29));
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background: linear-gradient(to bottom, #F8CDDA, rgb(58, 9, 29)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .center {
   width: 20%;
    /* fallback for old browsers */
-  background: #0F2027; 
+  background: #0F2027;
    /* Chrome 10-25, Safari 5.1-6 */
-   background: -webkit-linear-gradient(to top, #2C5364, #203A43, #0F2027); 
+   background: -webkit-linear-gradient(to top, #2C5364, #203A43, #0F2027);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-   background: linear-gradient(to top, #2C5364, #203A43, #0F2027); 
+   background: linear-gradient(to top, #2C5364, #203A43, #0F2027);
   /* background-color: #fcb045; */
   -webkit-box-shadow: 0px 0px 181px -25px rgba(235,38,71,1);
   -moz-box-shadow: 0px 0px 181px -25px rgba(235,38,71,1);
@@ -266,8 +267,8 @@ button:hover {
   transition: all 10s;
   margin-left: 22%;
   margin-top: 20%;
-  transition-timing-function: cubic-bezier(1, 1.13, -4.72, 2.38); 
-} 
+  transition-timing-function: cubic-bezier(1, 1.13, -4.72, 2.38);
+}
 #cookie:hover {
   transform: rotate(30080deg);
   filter: hue-rotate(600deg);
@@ -312,7 +313,7 @@ button:hover {
   background: -webkit-linear-gradient(to right, #583a36, #38261C);
   background: linear-gradient(to right, #885c56, #38261C);
   border-radius: 100%;
-  position: absolute; 
+  position: absolute;
 }
 #choco4 {
   top: 137px;
@@ -324,7 +325,7 @@ button:hover {
   background: -webkit-linear-gradient(to right, #583a36, #38261C);
   background: linear-gradient(to right, #583a36, #38261C);
   border-radius: 100%;
-  position: absolute; 
+  position: absolute;
 }
 #choco5 {
   top: 71px;
@@ -336,7 +337,7 @@ button:hover {
   background: -webkit-linear-gradient(to left, #9a8478, #1e130c);
   background: linear-gradient(to left, #8d6960, #1e130c);
   border-radius: 100%;
-  position: absolute; 
+  position: absolute;
 }
 #choco6 {
   top: 154px;
