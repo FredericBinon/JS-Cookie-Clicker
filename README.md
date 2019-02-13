@@ -13,7 +13,7 @@ Final work online:
 [Grany Click](file:///home/user/Desktop/Becode_Projets/JS/JS-Cookie-Clicker/index.html)
 
 
-## Build with
+## Co-workers
 
 * [AMAN Djedou Arnaud](https://github.com/djedou) 
 * [BAQUET Mathilde](https://github.com/MathildeBa)
