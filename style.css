@@ -1,3 +1,6 @@
+
+ 
+
 body{
   margin: 0px;
 }
@@ -20,10 +23,11 @@ button {
   background: #1D2B64;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to top, #F8CDDA, #1D2B64);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to top, #F8CDDA, #1D2B64); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+  transition: 1s;
 }
 
 button:hover {
+  border-radius: 50% 50%;
   background: #1D2B64;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to bottom, #F8CDDA, rgb(58, 9, 29));  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to bottom, #F8CDDA, rgb(58, 9, 29)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -35,8 +39,6 @@ button:hover {
 
 #msg {
   display: none;
-  left: 793px;
-  top: 77px;
   z-index: 9999;
   width: 330px;
   height: 180px;
@@ -44,8 +46,8 @@ button:hover {
   background-repeat: no-repeat;
   background-size: 80%;
   position: fixed;
-  left: 797px;
-  top: 59px;
+  left: 817px;
+  top: 69px;
   background-blend-mode: saturation;
   background-size: 91%;
   position: absolute;
@@ -193,6 +195,7 @@ h3 {
   display:flex;
   flex-wrap: wrap;
   text-align: center;
+
   
 }
 
@@ -246,22 +249,27 @@ h3 {
 .right h2{
   background-color: #1e3877;
   font-size: 2.1em;
-  margin-bottom: 1em;
+  margin-bottom: -2em;
   font-family: 'Pacifico', cursive;
   color: #b665ba;
   padding: 20px;
+  letter-spacing: 1px;
+ 
   }
   
 
 .affichage{
-  margin-bottom: 15vh;
-  height:10vh;
-  font-size: 4em;
-  background: -webkit-linear-gradient(#d3f70c, #f30594);
+  font-size: 72px;
+  background: -webkit-linear-gradient(#d3f70c, #fa0000);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  margin-bottom: 10vh;
+  margin-top: 150px;
+  height:10vh;
+  font-size: 4em;
   font-family: 'Press Start 2P', cursive;
-  text-shadow: #F8CDDA;
+  -webkit-text-fill-color: transparent;
+
 }
 
 /* .clic {
@@ -301,23 +309,30 @@ h3 {
     #cookie {
     width: 59%;
     max-width: 100%;
-    height: 227px;
+    height: 247px;
     background: radial-gradient(#5f2e09, #c5AE89);
     border-radius: 100%;
     margin: 73px;
     position: relative;
     transition: all 10s;
+    margin-left: 22%;
+    margin-top: 20%;
     transition-timing-function: cubic-bezier(1, 1.13, -4.72, 2.38);
     
   } 
+  
+   
 
   #cookie:hover {
-    transform: rotate(20080deg);
+    transform: rotate(30080deg);
     filter: hue-rotate(600deg);
   
   }
   #cookie:active {
-    background: radial-gradient(#c5AE89,#5f2e09,#c5AE89 );
+    background: radial-gradient(#c5AE89,#5f2e09,#c5AE89,#5f2e09,
+    #c5AE89,#5f2e09,#c5AE89,#5f2e09,#c5AE89,#5f2e09,#c5AE89,
+    #5f2e09,#c5AE89, #5f2e09,#c5AE89,#5f2e09,#c5AE89,#5f2e09,
+    #c5AE89,#5f2e09 );
   }
   
   #choco1 {
