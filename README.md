@@ -100,20 +100,20 @@ From  06 Feb 2019 to 13 Feb 2019.
 
 ## Timeline / Workflow
 ### Wendesday 06/02
-- Visualization of video SRCUM.
-- Creation of GitHub's Repos and branches.
-- Calendar's preparation.
+- Visualization of video SCRUM.
+- Creation of GitHub Repo and branches.
+- Timetable design.
 - Amalia and Arnaud start the "clic" and the "score" code on .js. 
 - Frederic and Andres initialisation of design on .css and html.
 
 ### Thursday 07/02
-- GitHub's branches organisation and remediation.
-- Amalia and Arnaud *multiplicator* botton function .js. (price and nombers).
-- Mathilde and Andres design amelioratiion .html and .css.
-- Frerderic: code prevew on paper (UML). 
+- GitHub branches organisation and remediation.
+- Amalia and Arnaud *multiplicator* button function .js. (price and numbers).
+- Mathilde and Andres design improve (.html and .css.)
+- Frerderic: code preview on paper (UML). 
 
 ### Friday 08/02
-- Arnaud, Amalia and Frederic conflicts resolution between bouttons *multiplicator* & *autoclicker*.
+- Arnaud, Amalia and Frederic conflicts resolution between *multiplicator* & *autoclicker* buttons.
 - Mathilde : starting code of *bonus* button .js.
 - Andres: keep going on design .CSS .SVG.
 
@@ -124,15 +124,15 @@ From  06 Feb 2019 to 13 Feb 2019.
 - Arnaud and Mathilde start the bonus algorithm .js.
 
 ### Tuesday 12/02
-- Andres and Amalia visual charter correction .CSS
+- Andres and Amalia visual charter fixed .CSS
 - Amalia and Frederic works on speach ballon alteration.
 - Arnaud and Mathilde almost finish the bonus botton. And start the *countdown* code on .js.
-- Frederic finish the *autoclick* botton.
+- Frederic finish the *autoclick* button.
 
 ### Wendesday 13/02
 - Correcting last bugs.
 - Testing the game.
-- Merging the *developpment* branch on the *master*.
+- Merging the *developpment* branch into the *master* branch.
 - Celebrating our first commun project.  
 
 ## What we learn...  
