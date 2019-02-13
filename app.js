@@ -81,7 +81,7 @@ window.onload = () => {
           autoclicRestants = oldAutoclicRestants -1;
           oldBesoin=besoin;
           score=score-oldBesoin;
-          besoin=oldBesoin*10;
+          besoin=oldBesoin*5;
           prixAutoclicker.innerText=besoin;
           affichage.innerText = score;
           setInterval(()=>clicauto(score),1000);
