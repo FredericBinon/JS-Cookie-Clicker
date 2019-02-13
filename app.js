@@ -70,11 +70,11 @@ window.onload = () =>
     function testautoclic(oldAutoclicRestants, oldBesoin, oldAutoclicUtilises){
       if (autoclicRestants<1) {
         document.getElementsByName("autoclicker")[0].className = "activated";
-        error("Bin non gros malin, t'as d'ja tout pris", "#msg");
+        error("Don't cheat!!! \n No autoclickers\n left.", "#msg");
       }
       else {
         if (score<besoin){
-            error("Wesh ma gueule, il te faut plus de cookies pour ça", "#msg");
+            error("Hey bro! You need more cookies for that.", "#msg");
         }
         if (score >= besoin) {
           oldAutoclicUtilises=autoclicUtilises;
