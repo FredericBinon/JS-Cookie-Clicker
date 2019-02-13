@@ -1,15 +1,11 @@
 
- 
-
 body{
   padding: 0px;
  margin: 0px;
  min-width: 1024px;
  text-align: center;
  overflow: hidden;
-  
 }
-
 main{
   width:96vw;
   height:92vh;
@@ -22,25 +18,18 @@ main{
   border-color:#40369d;
   border-radius: 0%;
 }
-
-
 button {
   background: #1D2B64;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to top, #F8CDDA, #1D2B64);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to top, #F8CDDA, #1D2B64); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  transition: 1s;
+  background: -webkit-linear-gradient(to top, #F8CDDA, #d65c86);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #F8CDDA, #d65c86); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  transition: 2s;
 }
-
 button:hover {
   border-radius: 50% 50%;
   background: #1D2B64;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to bottom, #F8CDDA, rgb(58, 9, 29));  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to bottom, #F8CDDA, rgb(58, 9, 29)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
 }
-
-
-
 
 #msg {
   display: none;
@@ -188,13 +177,14 @@ box-shadow: 0px 0px 181px 5px rgb(80, 77, 243);
   color: white;
 }
 h3 {
-  color: rgb(190, 146, 176);
+  color: rgb(204, 204, 204);
   font-size: 0.65em;
   font-family: 'Press Start 2P', cursive;
 }
 
 .actions{
-  height: 25%;
+  margin-top: 47px!important;
+  height: auto;
   margin: 5vh;
   background-color:#203076;
   display:flex;
@@ -256,7 +246,7 @@ h3 {
   font-size: 2.1em;
   margin-bottom: -2em;
   font-family: 'Pacifico', cursive;
-  color: #b665ba;
+  color: #d65c86;
   padding: 20px;
   letter-spacing: 1px;
  
@@ -435,10 +425,13 @@ h3 {
 
 
 button{
-  border: none;
-  width:100%;
+  margin-bottom: 30px;
+  margin-top: none;
+  width: 100%;
   margin-left: 60px;
   margin-right: 60px;
   height: 35px;
   border-radius: 29px 0px 29px 0px;
+  margin-top: 10px;
+  border: none;
 }
