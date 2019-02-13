@@ -12,9 +12,10 @@ body{
 
 main{
   width:96%;
-  height:92vh;
+  height:93vh;
   display:flex;
   margin:0%;
+  padding: 0;
   background-color:#000;
   border-style: ridge;
   border-width: 2em;
