@@ -2,10 +2,12 @@
 
 JS-Cookie-Clicker is an application based on JavaScript developed within the BeCode training.  
 
-*Timetable* 
+Here is an example of [Cookie Clicker](http://orteil.dashnet.org/cookieclicker/) application.
+
+**Timetable:**  
+
 From  06 Feb 2019 to 13 Feb 2019.
 
-Exemple of [Cookie Clicker](http://orteil.dashnet.org/cookieclicker/) application.
 
 Work visual preview:
 <img src="https://github.com/FredericBinon/JS-Cookie-Clicker/blob/development/images/final%20visual.png" class="final visual"/>
