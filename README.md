@@ -9,7 +9,7 @@ Here is an example of [Cookie Clicker](http://orteil.dashnet.org/cookieclicker/)
 From  06 Feb 2019 to 13 Feb 2019.
 
 Final work online:
-[Grany Click](file:///home/user/Desktop/Becode_Projets/JS/JS-Cookie-Clicker/index.html)
+[Grany Click](https://fredericbinon.github.io/JS-Cookie-Clicker/)
 
 **Work visual preview:**
 <img src="https://github.com/FredericBinon/JS-Cookie-Clicker/blob/development/images/final%20visual.png" class="final visual"/>
