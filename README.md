@@ -136,4 +136,5 @@ From  06 Feb 2019 to 13 Feb 2019.
 - Celebrating our first commun project.  
 
 ## What we learn...  
-During the process of this project we faced differents problems regarding the framework, the method as well as the organisation. We finally came up with new proposals that allow us to stablish a good workflow. Lead by our Scrum master, Mathilde, we ended up working in pairs each of the tasks related with javascript and css. 
+During the process of this project we faced differents problems regarding the framework, the method as well as the organisation. We finally came up with new proposals that allow us to stablish a good workflow. Lead by our Scrum master, Mathilde, we ended up working in pairs each of the tasks related with javascript and css. Due to a lack os structure in GitHub we all worked in the same branch called *development*.  
+
