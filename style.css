@@ -79,11 +79,7 @@ h3 {
 .prixMulti, .nombreMulti, .prixAutoclicker,
 .nombreAutoclicker, .prixBonus, .tempsRestant{
   width:50%;
-<<<<<<< HEAD
-  padding-top: 0%;
-=======
   padding-top: 3%;
->>>>>>> 39969c82db7baee916e5798cb7f8b8e2f2e0d79d
 }
 button{
   margin-bottom: 30px;
