@@ -7,11 +7,11 @@ Create in group a cookie clicker application based on Js.
 
 ## Build with
 
-*[BINON Frédéric](https://github.com/FredericBinon)
-*[DJEDOU Arnaud](https://github.com/djedou)
-*[RODRIGEZ Amalia](https://github.com/AmaliaRVM)
-*[GOLDESTEIN Andrés](https://github.com/AndresGol)
-*[BAQUET Mathilde](https://github.com/MathildeBa)
+*[BINON Frédéric](https://github.com/FredericBinon) 
+*[DJEDOU Arnaud](https://github.com/djedou) 
+*[RODRIGEZ Amalia](https://github.com/AmaliaRVM) 
+*[GOLDESTEIN Andrés](https://github.com/AndresGol) 
+*[BAQUET Mathilde](https://github.com/MathildeBa) 
 
 ## Acknowledgments
 
