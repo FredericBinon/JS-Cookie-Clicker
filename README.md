@@ -89,37 +89,39 @@ From the 06 Feb 2019 to 13 Feb 2019.
 
 ## Calendrier
 ### mercredi 06/02
-- visualization of video SRCUM
-- creation of GitHub's Repos 
+- Visualization of video SRCUM
+- Creation of GitHub's Repos 
 * Master
 * Development 
  **design
  **JS Clic/Score
-- calendar's preparation
-- Amalia & Arnaud start the "clic"'s and the "score"'s code on .JS. 
-- Frederic et Andres créer le design de base HTML et CSS visualisation des boutons. 
+- Calendar's preparation
+- Amalia & Arnaud start the "clic" and the "score" code on .js. 
+- Frederic et Andres initialisation of design on .css and html.
 
 ### jeudi 07/02
-- mise en place du programme de la journée
-- organisation des branches sur Git Hub.
-- Amalia et Arnaud: fonction du boutton Multiplicateur, de son prix et de son nombre sur .JS
-- Mathilde et Andres: application du design en .html et .css
-- Frerderic: previsualisation du code sur papier en francais du futur code. (UML)
+- GitHub's branches organisation and remediation.
+- Amalia et Arnaud *multiplicator* botton function .js. (price and nombers).
+- Mathilde et Andres design amelioratiion .html and .css
+- Frerderic: code prevew on paper (UML). 
 
 ### vendredi 08/02
--  Arnaud, Amalia et Frederic : resolution des conflits entre le bouton "multiplicateur"&"autoclicker"
-- Mathilde : debut du codage pour le bouton "bonus" 
-- Andres: avancement sur le design en .CSS .SVG 
+- Arnaud, Amalia et Frederic conflicts resolution between bouttons *multiplicator* & *autoclicker*.
+- Mathilde : starting code of *bonus* button .js.
+- Andres: keep going on design .CSS .SVG.
 
 ### lundi 11/02
-- Amalia et Frederic affichage visuel des bulles pour les messages d'erreur.
-- Andres avancement du style de texte et animations des boutons
-- Frederic resolution des conflits .JS 
-- Arnaud et Mathilde 
+- Amalia et Frederic display of error speach balloon.
+- Andres keep going on design : text style and button animation.
+- Frederic conflict resolution GitHub.
+- Arnaud et Mathilde start the bonus algorithm .js.
 
 ### mardi 12/02
-- Andres et Amalia corrige la charte du visuel .CSS
-- Amalia et Frederic  changement de l'affichage visuel des bulles pour les messages d'erreur.
-- Arnaud et Mathilde avancement sur le bouton Bonus et du compte a rebours Bonus
-- Frederic finalisation de l'autoclick.   
+- Andres et Amalia visual charter correction .CSS
+- Amalia et Frederic works on speach ballon alteration.
+- Arnaud et Mathilde almost finish the bonus botton. And start the *countdown* code on .js.
+- Frederic finish the *autoclick* botton.
 
+### mercredi 13/02
+-Testing the game
+-Merging the *developpment* branch on the *master*.
