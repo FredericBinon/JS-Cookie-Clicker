@@ -89,14 +89,14 @@ From the 06 Feb 2019 to 13 Feb 2019.
 
 ## Calendrier
 ### mercredi 06/02
-- Visualisation de la video SRCUM
-- creation d'un Repos GitHub
+- visualization of video SRCUM
+- creation of GitHub's Repos 
 * Master
 * Development 
- ** design
- ** JS Clic/Score
-- préparation du calendrier
-- Amalia et Arnaud débute le code en JS pour lier le "clic" au "Score"
+ **design
+ **JS Clic/Score
+- calendar's preparation
+- Amalia & Arnaud start the "clic"'s and the "score"'s code on .JS. 
 - Frederic et Andres créer le design de base HTML et CSS visualisation des boutons. 
 
 ### jeudi 07/02
