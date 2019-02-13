@@ -1,5 +1,6 @@
 
-window.onload = () => {
+window.onload = () => 
+{
     let multiObjet = {
         prix: 50,
         nombre:1,
@@ -18,13 +19,11 @@ window.onload = () => {
         tempsActif : 0,
         tempsDebut : 0,
         count : 0
-
     }
 
 
     let score = 0;
     let multiplicateur = 1;
-    let boutonactive=false;
     let besoin = 1;
     let autoclicUtilises = 0;
     let autoclicRestants = 3;
@@ -36,19 +35,18 @@ window.onload = () => {
     let prixAutoclicker= document.getElementsByClassName("prix")[1];
     let compteur = document.getElementsByClassName("compteur")[0];
     let compteautoclicker= document.getElementsByClassName("compteur")[1];
+    //let countdown=document.getElementById("compteur")[2];
     let bouttonBonus = document.getElementById("bonus");
 
 
     function click(multiplicateur) {
         let tempsFin = new Date().getSeconds();
         let bonObj = bonusObjet ;
-        if ( bonObj.tempsActif == 1 && tempsFin < bonObj.tempsDebut){
-            multiplicateur = multiplicateur * 2 ;
-            console.log("djed2: " + tempsFin);
-            console.log("mul: " + multiplicateur);
-
-        }
-
+            if ( bonObj.tempsActif == 1 && tempsFin < bonObj.tempsDebut){
+                multiplicateur = multiplicateur * 2 ;
+                console.log("djed2: " + tempsFin);
+                console.log("mul: " + multiplicateur);
+            }
         for (var i= 1; i <= multiplicateur; i++) {
             score++;
         }
@@ -121,22 +119,12 @@ window.onload = () => {
         let bonusObj = bonusObjet;
         if (score >= bonusObj.prix && bonusObj.count == 0) {
             let dat = new Date();
-            bonusObj.tempsDebut = dat.getSeconds() + 30;
+            bonusObj.tempsDebut = dat.getSeconds();
             bonusObj.tempsActif = 1;
             score = score - bonusObj.prix;
             affichage.innerText = score;
-           /*  bonusObj.tempsFin = bonusObj.tempsDebut + 30; */
-            /* score= score *2; */
-           /*  affichage.innerText = score; */
             ++bonusObj.count;
-        }/*  else if (score >= bonusObj.prix && bonusObj.count !== 0){
-            let n = new Date().getSeconds();
-            if(n < bonusObj.tempsFin){
-                score= score *2;
-
-            }
-
-        } */
+        }
     }
 
 
@@ -163,6 +151,44 @@ window.onload = () => {
 /* the bonus element multiplied the score suring 30sec */
     bouttonBonus.addEventListener("click",function (e){
         e.preventDefault ();
+        let n = 0;
+        let bonusObj = bonusObjet;
+        if(n != 0){
+            setTimeout(() => {
+                bonusObj.tempsActif = 0; 
+            }, 30000)
+           
+        }
+        n++;
         bonus();
     })
 }
+
+// //Countdown Bonus
+//     var decompte = function(i){
+//         countdown.innerHTML=i+"s";
+//     }
+//     var affichage=function(){
+//         countdown.innerHTML="Ready";
+//     }
+//     var temps=0;
+//     var decrement = function(){
+//         // i represente le nombre de seconde pour le decompte 
+//         for(var i = 30; i=0;i--){
+//             setTimeout(function(s){
+//                 return function(){
+//                     //fonction d'affichage du decompte
+//                     decompte(s);
+//                 }
+//             })(i),temps;
+//             temps+-1000;
+
+//         }
+//     }
+//     // appel de la fonction
+//     decrement();
+//         //apres le decompte affichage du meggase de fin
+//     setTimeout(affichage,temps-1000);
+
+
+
